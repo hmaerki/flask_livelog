@@ -1,0 +1,26 @@
+<span style="font-weight: bold">============================= test session starts ==============================</span>
+platform linux -- Python 3.7.2, pytest-5.3.2, py-1.8.0, pluggy-0.13.1
+rootdir: /home/hansm/zi/versuche_flask_logfile/flask_livelog
+plugins: metadata-1.11.0, rerunfailures-8.0, timeout-1.3.3, cov-2.10.0, html-3.1.1, mypy-0.3.3
+collected 31 items
+
+examples_pytest/test_long_running.py <span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #aa0000">F</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #00aa00">.</span><span style="color: #aa0000">      [ 96%]</span>
+examples_pytest/test_sample.py <span style="color: #aa0000">F</span><span style="color: #aa0000">                                         [100%]</span>
+
+=================================== FAILURES ===================================
+<span style="color: #aa0000"></span><span style="font-weight: bold; color: #aa0000">________________________________ test_sleep[3] _________________________________</span>
+
+counter = 3
+
+<span style="font-weight: bold">&gt;   ???</span>
+<span style="font-weight: bold"></span><span style="font-weight: bold; color: #aa0000">E   assert 3 != 3</span>
+
+<span style="font-weight: bold"></span><span style="font-weight: bold; color: #aa0000">/home/hansm/zi/versuche_flask_logfile/flask_livelog/pytest_examples/test_long_running.py</span>:8: AssertionError
+<span style="color: #aa0000"></span><span style="font-weight: bold; color: #aa0000">_________________________________ test_answer __________________________________</span>
+
+<span style="font-weight: bold">&gt;   ???</span>
+<span style="font-weight: bold"></span><span style="font-weight: bold; color: #aa0000">E   assert 4 == 5</span>
+<span style="font-weight: bold"></span><span style="font-weight: bold; color: #aa0000">E    +  where 4 = inc(3)</span>
+
+<span style="font-weight: bold"></span><span style="font-weight: bold; color: #aa0000">/home/hansm/zi/versuche_flask_logfile/flask_livelog/pytest_examples/test_sample.py</span>:7: AssertionError
+<span style="color: #aa0000">======================== </span><span style="color: #aa0000"></span><span style="font-weight: bold; color: #aa0000">2 failed</span>, <span style="color: #00aa00">29 passed</span><span style="color: #aa0000"> in 30.31s</span><span style="color: #aa0000"> =========================</span>

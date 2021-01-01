@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Livelog Demo</title>
+</head>
+
+<body>
+    <h1>Livelog Demo</h1>
+    <h2>Open the livelog page with input form.</h2>
+    <ul>
+        <li><a target="livelog" href='{{ url_for("livelog", filename=None) }}'>Livelog with input form</a></li>
+    </ul>
+    <h2>Open the livelog page with a given file.</h2>
+    <ul>
+        <li><a target="livelog" href='{{ url_for("livelog", filename="LIVELOG_MOCK") }}'>LIVELOG_MOCK</a> Just a counter to see livelog and page scrolling</li>
+        <li><a target="livelog" href='{{ url_for("livelog", filename="COMMAND_DMESG") }}'>COMMAND_DMESG</a> Linux only: Pipe output of `dmesg --follow`.</li>
+        <li><a target="livelog" href='{{ url_for("livelog", filename="COMMAND_PS") }}'>COMMAND_PS</a> Linux only: Pipe output of `ps a`.</li>
+        <li><a target="livelog" href='{{ url_for("livelog", filename=filename_pytest, view="1") }}'>{{ filename_pytest }}</a> You may start <code>run_Pytests.sh</code> to see the live update.</code></li>
+        <li><a target="livelog" href='{{ url_for("livelog", filename=filename_test, view="1") }}'>{{ filename_test }}</a> A Logfile with highlighting of ERROR, WARNING and INFO</li>
+    </ul>
+</body>
+
+</html>

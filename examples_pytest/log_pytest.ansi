@@ -1,0 +1,62 @@
+[1m============================= test session starts ==============================[0m
+platform linux -- Python 3.7.2, pytest-5.3.2, py-1.8.0, pluggy-0.13.1 -- /home/hansm/.pyenv/versions/3.7.2/bin/python3.7
+cachedir: .pytest_cache
+metadata: {'Python': '3.7.2', 'Platform': 'Linux-5.4.0-58-generic-x86_64-with-debian-bullseye-sid', 'Packages': {'pytest': '5.3.2', 'py': '1.8.0', 'pluggy': '0.13.1'}, 'Plugins': {'metadata': '1.11.0', 'rerunfailures': '8.0', 'timeout': '1.3.3', 'cov': '2.10.0', 'html': '3.1.1', 'mypy': '0.3.3'}, 'JAVA_HOME': '/usr'}
+rootdir: /home/hansm/zi/versuche_flask_logfile/flask_livelog/examples_pytest
+plugins: metadata-1.11.0, rerunfailures-8.0, timeout-1.3.3, cov-2.10.0, html-3.1.1, mypy-0.3.3
+[1mcollecting ... [0mcollected 31 items
+
+test_long_running.py::test_sleep[0] [32mPASSED[0m[32m                               [  3%][0m
+test_long_running.py::test_sleep[1] [32mPASSED[0m[32m                               [  6%][0m
+test_long_running.py::test_sleep[2] [32mPASSED[0m[32m                               [  9%][0m
+test_long_running.py::test_sleep[3] [31mFAILED[0m[31m                               [ 12%][0m
+test_long_running.py::test_sleep[4] [32mPASSED[0m[31m                               [ 16%][0m
+test_long_running.py::test_sleep[5] [32mPASSED[0m[31m                               [ 19%][0m
+test_long_running.py::test_sleep[6] [32mPASSED[0m[31m                               [ 22%][0m
+test_long_running.py::test_sleep[7] [32mPASSED[0m[31m                               [ 25%][0m
+test_long_running.py::test_sleep[8] [32mPASSED[0m[31m                               [ 29%][0m
+test_long_running.py::test_sleep[9] [32mPASSED[0m[31m                               [ 32%][0m
+test_long_running.py::test_sleep[10] [32mPASSED[0m[31m                              [ 35%][0m
+test_long_running.py::test_sleep[11] [32mPASSED[0m[31m                              [ 38%][0m
+test_long_running.py::test_sleep[12] [32mPASSED[0m[31m                              [ 41%][0m
+test_long_running.py::test_sleep[13] [32mPASSED[0m[31m                              [ 45%][0m
+test_long_running.py::test_sleep[14] [32mPASSED[0m[31m                              [ 48%][0m
+test_long_running.py::test_sleep[15] [32mPASSED[0m[31m                              [ 51%][0m
+test_long_running.py::test_sleep[16] [32mPASSED[0m[31m                              [ 54%][0m
+test_long_running.py::test_sleep[17] [32mPASSED[0m[31m                              [ 58%][0m
+test_long_running.py::test_sleep[18] [32mPASSED[0m[31m                              [ 61%][0m
+test_long_running.py::test_sleep[19] [32mPASSED[0m[31m                              [ 64%][0m
+test_long_running.py::test_sleep[20] [32mPASSED[0m[31m                              [ 67%][0m
+test_long_running.py::test_sleep[21] [32mPASSED[0m[31m                              [ 70%][0m
+test_long_running.py::test_sleep[22] [32mPASSED[0m[31m                              [ 74%][0m
+test_long_running.py::test_sleep[23] [32mPASSED[0m[31m                              [ 77%][0m
+test_long_running.py::test_sleep[24] [32mPASSED[0m[31m                              [ 80%][0m
+test_long_running.py::test_sleep[25] [32mPASSED[0m[31m                              [ 83%][0m
+test_long_running.py::test_sleep[26] [32mPASSED[0m[31m                              [ 87%][0m
+test_long_running.py::test_sleep[27] [32mPASSED[0m[31m                              [ 90%][0m
+test_long_running.py::test_sleep[28] [32mPASSED[0m[31m                              [ 93%][0m
+test_long_running.py::test_sleep[29] [32mPASSED[0m[31m                              [ 96%][0m
+test_sample.py::test_answer [31mFAILED[0m[31m                                       [100%][0m
+
+=================================== FAILURES ===================================
+[31m[1m________________________________ test_sleep[3] _________________________________[0m
+
+counter = 3
+
+[1m    @pytest.mark.parametrize("counter", range(30))[0m
+[1m    def test_sleep(counter):[0m
+[1m        # print(f'Hallo {counter}')[0m
+[1m        time.sleep(0.5)[0m
+[1m>       assert counter != 3[0m
+[1m[31mE       assert 3 != 3[0m
+
+[1m[31mtest_long_running.py[0m:8: AssertionError
+[31m[1m_________________________________ test_answer __________________________________[0m
+
+[1m>   ???[0m
+[1m[31mE   assert 4 == 5[0m
+[1m[31mE     -4[0m
+[1m[31mE     +5[0m
+
+[1m[31m/home/hansm/zi/versuche_flask_logfile/flask_livelog/pytest_examples/test_sample.py[0m:7: AssertionError
+[31m======================== [31m[1m2 failed[0m, [32m29 passed[0m[31m in 15.29s[0m[31m =========================[0m

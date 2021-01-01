@@ -1,0 +1,4 @@
+flask==1.1.2
+flask-wtf==0.14.3
+WTForms==2.3.3
+ansi2html==1.6.0

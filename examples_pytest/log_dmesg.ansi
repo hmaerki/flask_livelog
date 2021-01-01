@@ -1,0 +1,1111 @@
+[32m[    0.000000] [0m[33mmicrocode[0m: microcode updated early to revision 0xe0, date = 2020-06-17
+[32m[    0.000000] [0m[33mCommand line[0m: BOOT_IMAGE=/boot/vmlinuz-5.4.0-58-generic root=UUID=213fe276-592c-49bf-bba8-c506adf608a5 ro quiet splash vt.handoff=7
+[32m[    0.000000] [0mKERNEL supported cpus:
+[32m[    0.000000] [0m  Intel GenuineIntel
+[32m[    0.000000] [0m  AMD AuthenticAMD
+[32m[    0.000000] [0m  Hygon HygonGenuine
+[32m[    0.000000] [0m  Centaur CentaurHauls
+[32m[    0.000000] [0m  zhaoxin   Shanghai  
+[32m[    0.000000] [0m[33mx86/fpu[0m: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[32m[    0.000000] [0m[33mx86/fpu[0m: Supporting XSAVE feature 0x002: 'SSE registers'
+[32m[    0.000000] [0m[33mx86/fpu[0m: Supporting XSAVE feature 0x004: 'AVX registers'
+[32m[    0.000000] [0m[33mx86/fpu[0m: Supporting XSAVE feature 0x008: 'MPX bounds registers'
+[32m[    0.000000] [0m[33mx86/fpu[0m: Supporting XSAVE feature 0x010: 'MPX CSR'
+[32m[    0.000000] [0m[33mx86/fpu[0m: xstate_offset[2]:  576, xstate_sizes[2]:  256
+[32m[    0.000000] [0m[33mx86/fpu[0m: xstate_offset[3]:  832, xstate_sizes[3]:   64
+[32m[    0.000000] [0m[33mx86/fpu[0m: xstate_offset[4]:  896, xstate_sizes[4]:   64
+[32m[    0.000000] [0m[33mx86/fpu[0m: Enabled xstate features 0x1f, context size is 960 bytes, using 'compacted' format.
+[32m[    0.000000] [0mBIOS-provided physical RAM map:
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000000000000-0x0000000000057fff] usable
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000000058000-0x0000000000058fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000000059000-0x000000000009dfff] usable
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x000000000009e000-0x00000000000fffff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000000100000-0x0000000073554fff] usable
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000073555000-0x0000000073555fff] ACPI NVS
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000073556000-0x0000000073556fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000073557000-0x0000000075387fff] usable
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000075388000-0x0000000075c87fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000075c88000-0x000000008be9dfff] usable
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x000000008be9e000-0x000000008c88dfff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x000000008c88e000-0x000000008cf7dfff] ACPI NVS
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x000000008cf7e000-0x000000008cffdfff] ACPI data
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x000000008cffe000-0x000000008cffefff] usable
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x000000008cfff000-0x000000008fffffff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000fd000000-0x00000000fe7fffff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000fed84000-0x00000000fed84fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x00000000ffa10000-0x00000000ffffffff] reserved
+[32m[    0.000000] [0m[33mBIOS-e820[0m: [mem 0x0000000100000000-0x000000056effffff] usable
+[32m[    0.000000] [0m[33mNX (Execute Disable) protection[0m: active
+[32m[    0.000000] [0mextended physical RAM map:
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000000000000-0x0000000000057fff] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000000058000-0x0000000000058fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000000059000-0x000000000009dfff] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x000000000009e000-0x00000000000fffff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000000100000-0x0000000072fb8017] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000072fb8018-0x0000000072fc6057] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000072fc6058-0x0000000072fc7017] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000072fc7018-0x0000000072fd7057] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000072fd7058-0x0000000073554fff] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000073555000-0x0000000073555fff] ACPI NVS
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000073556000-0x0000000073556fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000073557000-0x0000000075387fff] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000075388000-0x0000000075c87fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000075c88000-0x000000008be9dfff] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x000000008be9e000-0x000000008c88dfff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x000000008c88e000-0x000000008cf7dfff] ACPI NVS
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x000000008cf7e000-0x000000008cffdfff] ACPI data
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x000000008cffe000-0x000000008cffefff] usable
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x000000008cfff000-0x000000008fffffff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000e0000000-0x00000000efffffff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000fd000000-0x00000000fe7fffff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000fed00000-0x00000000fed00fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000fed10000-0x00000000fed19fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000fed84000-0x00000000fed84fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x00000000ffa10000-0x00000000ffffffff] reserved
+[32m[    0.000000] [0m[33mreserve setup_data[0m: [mem 0x0000000100000000-0x000000056effffff] usable
+[32m[    0.000000] [0m[33mefi[0m: EFI v2.50 by INSYDE Corp.
+[32m[    0.000000] [0m[33mefi[0m:  ACPI 2.0=0x8cffd014  SMBIOS=0x8c102000  SMBIOS 3.0=0x8c100000  ESRT=0x8c0fea58  MEMATTR=0x7c8d2018  TPMEventLog=0x72fd8018 
+[32m[    0.000000] [0m[33msecureboot[0m: Secure boot enabled
+[32m[    0.000000] [0mSMBIOS 3.0.0 present.
+[32m[    0.000000] [0m[33mDMI[0m: LENOVO 81DE/LNVNB161216, BIOS 8TCN58WW 06/18/2020
+[32m[    0.000000] [0m[33mtsc[0m: Detected 2000.000 MHz processor
+[32m[    0.000830] [0m[33mtsc[0m: Detected 1999.968 MHz TSC
+[32m[    0.000843] [0mlast_pfn = 0x56f000 max_arch_pfn = 0x400000000
+[32m[    0.001585] [0m[33mx86/PAT[0m: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+[32m[    0.001865] [0mlast_pfn = 0x8cfff max_arch_pfn = 0x400000000
+[32m[    0.014090] [0m[33mesrt[0m: Reserving ESRT space from 0x000000008c0fea58 to 0x000000008c0feab8.
+[32m[    0.014103] [0m[33mcheck[0m: Scanning 1 areas for low memory corruption
+[32m[    0.014109] [0mUsing GB pages for direct mapping
+[32m[    0.015350] [0m[33msecureboot[0m: Secure boot enabled
+[32m[    0.015352] [0m[33mRAMDISK[0m: [mem 0x3d048000-0x3fffdfff]
+[32m[    0.015363] [0m[33mACPI[0m: Early table checksum verification disabled
+[32m[    0.015368] [0m[33mACPI[0m: RSDP 0x000000008CFFD014 000024 (v02 LENOVO)
+[32m[    0.015372] [0m[33mACPI[0m: XSDT 0x000000008CFC6188 000104 (v01 LENOVO CB-01    00000001      01000013)
+[32m[    0.015379] [0m[33mACPI[0m: FACP 0x000000008CFEE000 00010C (v05 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015386] [0m[33mACPI[0m: DSDT 0x000000008CFCC000 01E30B (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015390] [0m[33mACPI[0m: FACS 0x000000008CF57000 000040
+[32m[    0.015393] [0m[33mACPI[0m: UEFI 0x000000008CFFC000 000236 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015397] [0m[33mACPI[0m: UEFI 0x000000008CFFB000 000042 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015400] [0m[33mACPI[0m: MSDM 0x000000008CFFA000 000055 (v03 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015404] [0m[33mACPI[0m: SSDT 0x000000008CFF9000 0004C3 (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015408] [0m[33mACPI[0m: SSDT 0x000000008CFF8000 000046 (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015411] [0m[33mACPI[0m: TPM2 0x000000008CFF7000 000034 (v03 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015415] [0m[33mACPI[0m: SSDT 0x000000008CFF3000 0030F5 (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015419] [0m[33mACPI[0m: ASF! 0x000000008CFF2000 0000A5 (v32 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015422] [0m[33mACPI[0m: ASPT 0x000000008CFF1000 000034 (v07 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015426] [0m[33mACPI[0m: BOOT 0x000000008CFF0000 000028 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015430] [0m[33mACPI[0m: DBGP 0x000000008CFEF000 000034 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015433] [0m[33mACPI[0m: HPET 0x000000008CFED000 000038 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015437] [0m[33mACPI[0m: APIC 0x000000008CFEC000 00012C (v03 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015440] [0m[33mACPI[0m: MCFG 0x000000008CFEB000 00003C (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015444] [0m[33mACPI[0m: LPIT 0x000000008CFCB000 000094 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015447] [0m[33mACPI[0m: WSMT 0x000000008CFCA000 000028 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015451] [0m[33mACPI[0m: SSDT 0x000000008CFC9000 00029F (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015455] [0m[33mACPI[0m: SSDT 0x000000008CFC8000 000346 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015458] [0m[33mACPI[0m: SSDT 0x000000008CFC7000 000E41 (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015462] [0m[33mACPI[0m: SSDT 0x000000008CFC5000 00051E (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015465] [0m[33mACPI[0m: DBGP 0x000000008CFC4000 000034 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015469] [0m[33mACPI[0m: DBG2 0x000000008CFC3000 000054 (v00 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015472] [0m[33mACPI[0m: SSDT 0x000000008CFC1000 0012E6 (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015476] [0m[33mACPI[0m: SSDT 0x000000008CFBF000 0017AE (v02 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015480] [0m[33mACPI[0m: DMAR 0x000000008CFBE000 0000CC (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015483] [0m[33mACPI[0m: FPDT 0x000000008CFBD000 000044 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015487] [0m[33mACPI[0m: BGRT 0x000000008CFBC000 000038 (v01 LENOVO CB-01    00000001 ACPI 00040000)
+[32m[    0.015724] [0mNo NUMA configuration found
+[32m[    0.015726] [0mFaking a node at [mem 0x0000000000000000-0x000000056effffff]
+[32m[    0.015738] [0mNODE_DATA(0) allocated [mem 0x56efd5000-0x56effffff]
+[32m[    0.016058] [0mZone ranges:
+[32m[    0.016059] [0m  DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+[32m[    0.016061] [0m  DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+[32m[    0.016062] [0m  Normal   [mem 0x0000000100000000-0x000000056effffff]
+[32m[    0.016063] [0m  Device   empty
+[32m[    0.016064] [0mMovable zone start for each node
+[32m[    0.016069] [0mEarly memory node ranges
+[32m[    0.016070] [0m[33m  node   0[0m: [mem 0x0000000000001000-0x0000000000057fff]
+[32m[    0.016071] [0m[33m  node   0[0m: [mem 0x0000000000059000-0x000000000009dfff]
+[32m[    0.016072] [0m[33m  node   0[0m: [mem 0x0000000000100000-0x0000000073554fff]
+[32m[    0.016073] [0m[33m  node   0[0m: [mem 0x0000000073557000-0x0000000075387fff]
+[32m[    0.016074] [0m[33m  node   0[0m: [mem 0x0000000075c88000-0x000000008be9dfff]
+[32m[    0.016075] [0m[33m  node   0[0m: [mem 0x000000008cffe000-0x000000008cffefff]
+[32m[    0.016076] [0m[33m  node   0[0m: [mem 0x0000000100000000-0x000000056effffff]
+[32m[    0.016300] [0m[33mZeroed struct page in unavailable ranges[0m: 23239 pages
+[32m[    0.016302] [0mInitmem setup node 0 [mem 0x0000000000001000-0x000000056effffff]
+[32m[    0.090933] [0mReserving Intel graphics memory at [mem 0x8e000000-0x8fffffff]
+[32m[    0.091099] [0m[33mACPI[0m: PM-Timer IO Port: 0x1808
+[32m[    0.091110] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x01] high edge lint[0x1])
+[32m[    0.091111] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x02] high edge lint[0x1])
+[32m[    0.091112] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x03] high edge lint[0x1])
+[32m[    0.091113] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x04] high edge lint[0x1])
+[32m[    0.091114] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x05] high edge lint[0x1])
+[32m[    0.091114] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x06] high edge lint[0x1])
+[32m[    0.091115] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x07] high edge lint[0x1])
+[32m[    0.091116] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x08] high edge lint[0x1])
+[32m[    0.091117] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x09] high edge lint[0x1])
+[32m[    0.091118] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x0a] high edge lint[0x1])
+[32m[    0.091118] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x0b] high edge lint[0x1])
+[32m[    0.091119] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x0c] high edge lint[0x1])
+[32m[    0.091120] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x0d] high edge lint[0x1])
+[32m[    0.091121] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x0e] high edge lint[0x1])
+[32m[    0.091121] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x0f] high edge lint[0x1])
+[32m[    0.091122] [0m[33mACPI[0m: LAPIC_NMI (acpi_id[0x10] high edge lint[0x1])
+[32m[    0.091150] [0m[33mIOAPIC[0][0m: apic_id 2, version 32, address 0xfec00000, GSI 0-119
+[32m[    0.091153] [0m[33mACPI[0m: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+[32m[    0.091155] [0m[33mACPI[0m: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+[32m[    0.091161] [0mUsing ACPI (MADT) for SMP configuration information
+[32m[    0.091163] [0m[33mACPI[0m: HPET id: 0x8086a201 base: 0xfed00000
+[32m[    0.091184] [0mTSC deadline timer available
+[32m[    0.091186] [0m[33msmpboot[0m: Allowing 8 CPUs, 0 hotplug CPUs
+[32m[    0.091218] [0m[33mPM[0m: Registered nosave memory: [mem 0x00000000-0x00000fff]
+[32m[    0.091221] [0m[33mPM[0m: Registered nosave memory: [mem 0x00058000-0x00058fff]
+[32m[    0.091223] [0m[33mPM[0m: Registered nosave memory: [mem 0x0009e000-0x000fffff]
+[32m[    0.091225] [0m[33mPM[0m: Registered nosave memory: [mem 0x72fb8000-0x72fb8fff]
+[32m[    0.091228] [0m[33mPM[0m: Registered nosave memory: [mem 0x72fc6000-0x72fc6fff]
+[32m[    0.091228] [0m[33mPM[0m: Registered nosave memory: [mem 0x72fc7000-0x72fc7fff]
+[32m[    0.091231] [0m[33mPM[0m: Registered nosave memory: [mem 0x72fd7000-0x72fd7fff]
+[32m[    0.091233] [0m[33mPM[0m: Registered nosave memory: [mem 0x73555000-0x73555fff]
+[32m[    0.091234] [0m[33mPM[0m: Registered nosave memory: [mem 0x73556000-0x73556fff]
+[32m[    0.091236] [0m[33mPM[0m: Registered nosave memory: [mem 0x75388000-0x75c87fff]
+[32m[    0.091238] [0m[33mPM[0m: Registered nosave memory: [mem 0x7c6b3000-0x7c7a6fff]
+[32m[    0.091241] [0m[33mPM[0m: Registered nosave memory: [mem 0x8be9e000-0x8c88dfff]
+[32m[    0.091241] [0m[33mPM[0m: Registered nosave memory: [mem 0x8c88e000-0x8cf7dfff]
+[32m[    0.091242] [0m[33mPM[0m: Registered nosave memory: [mem 0x8cf7e000-0x8cffdfff]
+[32m[    0.091245] [0m[33mPM[0m: Registered nosave memory: [mem 0x8cfff000-0x8fffffff]
+[32m[    0.091245] [0m[33mPM[0m: Registered nosave memory: [mem 0x90000000-0xdfffffff]
+[32m[    0.091246] [0m[33mPM[0m: Registered nosave memory: [mem 0xe0000000-0xefffffff]
+[32m[    0.091247] [0m[33mPM[0m: Registered nosave memory: [mem 0xf0000000-0xfcffffff]
+[32m[    0.091247] [0m[33mPM[0m: Registered nosave memory: [mem 0xfd000000-0xfe7fffff]
+[32m[    0.091248] [0m[33mPM[0m: Registered nosave memory: [mem 0xfe800000-0xfebfffff]
+[32m[    0.091249] [0m[33mPM[0m: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+[32m[    0.091250] [0m[33mPM[0m: Registered nosave memory: [mem 0xfec01000-0xfecfffff]
+[32m[    0.091250] [0m[33mPM[0m: Registered nosave memory: [mem 0xfed00000-0xfed00fff]
+[32m[    0.091251] [0m[33mPM[0m: Registered nosave memory: [mem 0xfed01000-0xfed0ffff]
+[32m[    0.091252] [0m[33mPM[0m: Registered nosave memory: [mem 0xfed10000-0xfed19fff]
+[32m[    0.091252] [0m[33mPM[0m: Registered nosave memory: [mem 0xfed1a000-0xfed83fff]
+[32m[    0.091253] [0m[33mPM[0m: Registered nosave memory: [mem 0xfed84000-0xfed84fff]
+[32m[    0.091254] [0m[33mPM[0m: Registered nosave memory: [mem 0xfed85000-0xfedfffff]
+[32m[    0.091255] [0m[33mPM[0m: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+[32m[    0.091255] [0m[33mPM[0m: Registered nosave memory: [mem 0xfee01000-0xffa0ffff]
+[32m[    0.091256] [0m[33mPM[0m: Registered nosave memory: [mem 0xffa10000-0xffffffff]
+[32m[    0.091259] [0m[mem 0x90000000-0xdfffffff] available for PCI devices
+[32m[    0.091260] [0mBooting paravirtualized kernel on bare hardware
+[32m[    0.091264] [0m[33mclocksource[0m: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+[32m[    0.091273] [0m[33msetup_percpu[0m: NR_CPUS:8192 nr_cpumask_bits:8 nr_cpu_ids:8 nr_node_ids:1
+[32m[    0.091534] [0m[33mpercpu[0m: Embedded 54 pages/cpu s184320 r8192 d28672 u262144
+[32m[    0.091587] [0m[33mBuilt 1 zonelists, mobility grouping on.  Total pages[0m: 5138061
+[32m[    0.091588] [0m[33mPolicy zone[0m: Normal
+[32m[    0.094182] [0m[33mDentry cache hash table entries[0m: 4194304 (order: 13, 33554432 bytes, linear)
+[32m[    0.095436] [0m[33mInode-cache hash table entries[0m: 2097152 (order: 12, 16777216 bytes, linear)
+[32m[    0.095545] [0m[33mmem auto-init[0m: stack:off, heap alloc:on, heap free:off
+[32m[    0.158532] [0m[33mMemory[0m: 20310436K/20878564K available (14339K kernel code, 2426K rwdata, 4932K rodata, 2720K init, 4956K bss, 568128K reserved, 0K cma-reserved)
+[32m[    0.158735] [0m[33mSLUB[0m: HWalign=64, Order=0-3, MinObjects=0, CPUs=8, Nodes=1
+[32m[    0.158754] [0m[33mKernel/User page tables isolation[0m: enabled
+[32m[    0.158772] [0m[33mftrace[0m: allocating 44541 entries in 174 pages
+[32m[    0.184299] [0m[33mrcu[0m: Hierarchical RCU implementation.
+[32m[    0.184301] [0m[33mrcu[0m: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=8.
+[32m[    0.184302] [0m	Tasks RCU enabled.
+[32m[    0.184303] [0m[33mrcu[0m: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+[32m[    0.184304] [0m[33mrcu[0m: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=8
+[32m[    0.188469] [0m[33mNR_IRQS[0m: 524544, nr_irqs: 2048, preallocated irqs: 16
+[32m[    0.189159] [0m[33mvt handoff[0m: transparent VT on vt#7
+[32m[    0.189168] [0m[33mConsole[0m: colour dummy device 80x25
+[32m[    0.189173] [0m[33mprintk[0m: console [tty0] enabled
+[32m[    0.189201] [0m[33mACPI[0m: Core revision 20190816
+[32m[    0.189588] [0m[33mclocksource[0m: hpet: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 79635855245 ns
+[32m[    0.189670] [0m[33mAPIC[0m: Switch to symmetric I/O mode setup
+[32m[    0.189672] [0m[33mDMAR[0m: Host address width 39
+[32m[    0.189674] [0m[33mDMAR[0m: DRHD base: 0x000000fed90000 flags: 0x0
+[32m[    0.189681] [0m[33mDMAR[0m: dmar0: reg_base_addr fed90000 ver 1:0 cap 1c0000c40660462 ecap 19e2ff0505e
+[32m[    0.189683] [0m[33mDMAR[0m: DRHD base: 0x000000fed91000 flags: 0x1
+[32m[    0.189687] [0m[33mDMAR[0m: dmar1: reg_base_addr fed91000 ver 1:0 cap d2008c40660462 ecap f050da
+[32m[    0.189689] [0m[33mDMAR[0m: RMRR base: 0x0000008c75d000 end: 0x0000008c77cfff
+[32m[    0.189690] [0m[33mDMAR[0m: RMRR base: 0x0000008d800000 end: 0x0000008fffffff
+[32m[    0.189691] [0m[33mDMAR[0m: ANDD device: 1 name: \_SB.PCI0.I2C0
+[32m[    0.189693] [0m[33mDMAR-IR[0m: IOAPIC id 2 under DRHD base  0xfed91000 IOMMU 1
+[32m[    0.189694] [0m[33mDMAR-IR[0m: HPET id 0 under DRHD base 0xfed91000
+[32m[    0.189695] [0m[33mDMAR-IR[0m: Queued invalidation will be enabled to support x2apic and Intr-remapping.
+[32m[    0.191315] [0m[33mDMAR-IR[0m: Enabled IRQ remapping in x2apic mode
+[32m[    0.191317] [0mx2apic enabled
+[32m[    0.191330] [0mSwitched APIC routing to cluster x2apic.
+[32m[    0.195281] [0m[33m..TIMER[0m: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+[32m[    0.213534] [0m[33mclocksource[0m: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x39a8208cdd2, max_idle_ns: 881590748921 ns
+[32m[    0.213540] [0mCalibrating delay loop (skipped), value calculated using timer frequency.. 3999.93 BogoMIPS (lpj=7999872)
+[32m[    0.213542] [0m[33mpid_max[0m: default: 32768 minimum: 301
+[32m[    0.217606] [0m[33mLSM[0m: Security Framework initializing
+[32m[    0.217622] [0m[33mYama[0m: becoming mindful.
+[32m[    0.217675] [0m[33mAppArmor[0m: AppArmor initialized
+[32m[    0.217779] [0m[33mMount-cache hash table entries[0m: 65536 (order: 7, 524288 bytes, linear)
+[32m[    0.217839] [0m[33mMountpoint-cache hash table entries[0m: 65536 (order: 7, 524288 bytes, linear)
+[32m[    0.218228] [0m[33mmce[0m: CPU0: Thermal monitoring enabled (TM1)
+[32m[    0.218261] [0m[33mprocess[0m: using mwait in idle threads
+[32m[    0.218265] [0m[33mLast level iTLB entries[0m: 4KB 64, 2MB 8, 4MB 8
+[32m[    0.218266] [0m[33mLast level dTLB entries[0m: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+[32m[    0.218270] [0m[33mSpectre V1 [0m: Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+[32m[    0.218272] [0m[33mSpectre V2 [0m: Mitigation: Full generic retpoline
+[32m[    0.218272] [0m[33mSpectre V2 [0m: Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+[32m[    0.218273] [0m[33mSpectre V2 [0m: Enabling Restricted Speculation for firmware calls
+[32m[    0.218275] [0m[33mSpectre V2 [0m: mitigation: Enabling conditional Indirect Branch Prediction Barrier
+[32m[    0.218276] [0m[33mSpectre V2 [0m: User space: Mitigation: STIBP via seccomp and prctl
+[32m[    0.218277] [0m[33mSpeculative Store Bypass[0m: Mitigation: Speculative Store Bypass disabled via prctl and seccomp
+[32m[    0.218286] [0m[33mSRBDS[0m: Mitigation: Microcode
+[32m[    0.218286] [0m[33mMDS[0m: Mitigation: Clear CPU buffers
+[32m[    0.218660] [0m[33mFreeing SMP alternatives memory[0m: 40K
+[32m[    0.221646] [0m[33msmpboot[0m: CPU0: Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz (family: 0x6, model: 0x8e, stepping: 0xa)
+[32m[    0.221848] [0m[33mPerformance Events[0m: PEBS fmt3+, Skylake events, 32-deep LBR, full-width counters, Intel PMU driver.
+[32m[    0.221855] [0m[33m... version[0m:                4
+[32m[    0.221856] [0m[33m... bit width[0m:              48
+[32m[    0.221857] [0m[33m... generic registers[0m:      4
+[32m[    0.221858] [0m[33m... value mask[0m:             0000ffffffffffff
+[32m[    0.221858] [0m[33m... max period[0m:             00007fffffffffff
+[32m[    0.221859] [0m[33m... fixed-purpose events[0m:   3
+[32m[    0.221860] [0m[33m... event mask[0m:             000000070000000f
+[32m[    0.221913] [0m[33mrcu[0m: Hierarchical SRCU implementation.
+[32m[    0.223447] [0m[33mNMI watchdog[0m: Enabled. Permanently consumes one hw-PMU counter.
+[32m[    0.223556] [0m[33msmp[0m: Bringing up secondary CPUs ...
+[32m[    0.223676] [0m[33mx86[0m: Booting SMP configuration:
+[32m[    0.223677] [0m[33m.... node  #0, CPUs[0m:      #1 #2 #3 #4
+[32m[    0.238369] [0m[33msmp[0m: Brought up 1 node, 8 CPUs
+[32m[    0.238369] [0m[33msmpboot[0m: Max logical packages: 1
+[32m[    0.238369] [0m[33msmpboot[0m: Total of 8 processors activated (31999.48 BogoMIPS)
+[32m[    0.242194] [0m[33mdevtmpfs[0m: initialized
+[32m[    0.242194] [0m[33mx86/mm[0m: Memory block size: 128MB
+[32m[    0.244491] [0m[33mPM[0m: Registering ACPI NVS region [mem 0x73555000-0x73555fff] (4096 bytes)
+[32m[    0.244491] [0m[33mPM[0m: Registering ACPI NVS region [mem 0x8c88e000-0x8cf7dfff] (7274496 bytes)
+[32m[    0.245565] [0m[33mclocksource[0m: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+[32m[    0.245565] [0m[33mfutex hash table entries[0m: 2048 (order: 5, 131072 bytes, linear)
+[32m[    0.245734] [0m[33mpinctrl core[0m: initialized pinctrl subsystem
+[32m[    0.245916] [0m[33mPM[0m: RTC time: 19:28:08, date: 2020-12-27
+[32m[    0.246077] [0m[33mNET[0m: Registered protocol family 16
+[32m[    0.246210] [0m[33maudit[0m: initializing netlink subsys (disabled)
+[32m[    0.246217] [0mEISA bus registered
+[32m[    0.246217] [0m[33mcpuidle[0m: using governor ladder
+[32m[    0.246217] [0m[33mcpuidle[0m: using governor menu
+[32m[    0.246217] [0mSimple Boot Flag at 0x44 set to 0x1
+[32m[    0.246217] [0mACPI FADT declares the system doesn't support PCIe ASPM, so disable it
+[32m[    0.246217] [0m[33mACPI[0m: bus type PCI registered
+[32m[    0.246217] [0m[33macpiphp[0m: ACPI Hot Plug PCI Controller Driver version: 0.5
+[32m[    0.246217] [0m[33mPCI[0m: MMCONFIG for domain 0000 [bus 00-ff] at [mem 0xe0000000-0xefffffff] (base 0xe0000000)
+[32m[    0.246217] [0m[33mPCI[0m: MMCONFIG at [mem 0xe0000000-0xefffffff] reserved in E820
+[32m[    0.246217] [0m[33mPCI[0m: Using configuration type 1 for base access
+[32m[    0.250387] [0mHugeTLB registered 1.00 GiB page size, pre-allocated 0 pages
+[32m[    0.250387] [0mHugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(Module Device)
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(Processor Device)
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(3.0 _SCP Extensions)
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(Processor Aggregator Device)
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(Linux-Dell-Video)
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+[32m[    0.250387] [0m[33mACPI[0m: Added _OSI(Linux-HPI-Hybrid-Graphics)
+[32m[    0.304800] [0m[33mACPI[0m: 10 ACPI AML tables successfully acquired and loaded
+[32m[    0.315206] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.315227] [0m[33mACPI[0m: SSDT 0xFFFFA09956FC7800 0005CD (v02 PmRef  Cpu0Ist  00003000 INTL 20160527)
+[32m[    0.317468] [0m[33mACPI[0m: \_PR_.PR00: _OSC native thermal LVT Acked
+[32m[    0.319180] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.319190] [0m[33mACPI[0m: SSDT 0xFFFFA099565DF400 0003FF (v02 PmRef  Cpu0Cst  00003001 INTL 20160527)
+[32m[    0.321349] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.321357] [0m[33mACPI[0m: SSDT 0xFFFFA09956F9ACC0 0000BA (v02 PmRef  Cpu0Hwp  00003000 INTL 20160527)
+[32m[    0.323361] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.323370] [0m[33mACPI[0m: SSDT 0xFFFFA09956FC5800 000628 (v02 PmRef  HwpLvt   00003000 INTL 20160527)
+[32m[    0.326089] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.326102] [0m[33mACPI[0m: SSDT 0xFFFFA09956811000 000D14 (v02 PmRef  ApIst    00003000 INTL 20160527)
+[32m[    0.329544] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.329552] [0m[33mACPI[0m: SSDT 0xFFFFA099565DFC00 000317 (v02 PmRef  ApHwp    00003000 INTL 20160527)
+[32m[    0.331766] [0m[33mACPI[0m: Dynamic OEM Table Load:
+[32m[    0.331775] [0m[33mACPI[0m: SSDT 0xFFFFA099565DB800 00030A (v02 PmRef  ApCst    00003000 INTL 20160527)
+[32m[    0.338561] [0m[33mACPI[0m: EC: EC started
+[32m[    0.338562] [0m[33mACPI[0m: EC: interrupt blocked
+[32m[    0.339011] [0m[33mACPI[0m: \_SB_.PCI0.LPCB.EC0_: Used as first EC
+[32m[    0.339014] [0m[33mACPI[0m: \_SB_.PCI0.LPCB.EC0_: GPE=0x4f, IRQ=-1, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[32m[    0.339015] [0m[33mACPI[0m: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC used to handle transactions
+[32m[    0.339016] [0m[33mACPI[0m: Interpreter enabled
+[32m[    0.339091] [0m[33mACPI[0m: (supports S0 S3 S4 S5)
+[32m[    0.339093] [0m[33mACPI[0m: Using IOAPIC for interrupt routing
+[32m[    0.339160] [0m[33mPCI[0m: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+[32m[    0.340145] [0m[33mACPI[0m: Enabled 6 GPEs in block 00 to 7F
+[32m[    0.356399] [0m[33mACPI[0m: Power Resource [WRST] (on)
+[32m[    0.378450] [0m[33mACPI[0m: PCI Root Bridge [PCI0] (domain 0000 [bus 00-fe])
+[32m[    0.378459] [0m[33macpi PNP0A08:00[0m: _OSC: OS supports [ExtendedConfig ASPM ClockPM Segments MSI HPX-Type3]
+[32m[    0.382765] [0m[33macpi PNP0A08:00[0m: _OSC: OS now controls [PCIeHotplug SHPCHotplug PME AER PCIeCapability LTR]
+[32m[    0.382766] [0m[33macpi PNP0A08:00[0m: FADT indicates ASPM is unsupported, using BIOS configuration
+[32m[    0.386189] [0mPCI host bridge to bus 0000:00
+[32m[    0.386192] [0m[33mpci_bus 0000:00[0m: root bus resource [io  0x0000-0x0cf7 window]
+[32m[    0.386194] [0m[33mpci_bus 0000:00[0m: root bus resource [io  0x0d00-0xffff window]
+[32m[    0.386196] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000a0000-0x000bffff window]
+[32m[    0.386197] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000c0000-0x000c3fff window]
+[32m[    0.386199] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000c4000-0x000c7fff window]
+[32m[    0.386200] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000c8000-0x000cbfff window]
+[32m[    0.386201] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000cc000-0x000cffff window]
+[32m[    0.386203] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000d0000-0x000d3fff window]
+[32m[    0.386204] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000d4000-0x000d7fff window]
+[32m[    0.386205] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000d8000-0x000dbfff window]
+[32m[    0.386206] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x000dc000-0x000dffff window]
+[32m[    0.386208] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0x90000000-0xdfffffff window]
+[32m[    0.386209] [0m[33mpci_bus 0000:00[0m: root bus resource [mem 0xfd000000-0xfe7fffff window]
+[32m[    0.386211] [0m[33mpci_bus 0000:00[0m: root bus resource [bus 00-fe]
+[32m[    0.386225] [0m[33mpci 0000:00:00.0[0m: [8086:5914] type 00 class 0x060000
+[32m[    0.387589] [0m[33mpci 0000:00:02.0[0m: [8086:5917] type 00 class 0x030000
+[32m[    0.387606] [0m[33mpci 0000:00:02.0[0m: reg 0x10: [mem 0xb0000000-0xb0ffffff 64bit]
+[32m[    0.387615] [0m[33mpci 0000:00:02.0[0m: reg 0x18: [mem 0xa0000000-0xafffffff 64bit pref]
+[32m[    0.387621] [0m[33mpci 0000:00:02.0[0m: reg 0x20: [io  0x4000-0x403f]
+[32m[    0.387645] [0m[33mpci 0000:00:02.0[0m: BAR 2: assigned to efifb
+[32m[    0.389090] [0m[33mpci 0000:00:14.0[0m: [8086:9d2f] type 00 class 0x0c0330
+[32m[    0.389119] [0m[33mpci 0000:00:14.0[0m: reg 0x10: [mem 0xb1310000-0xb131ffff 64bit]
+[32m[    0.389205] [0m[33mpci 0000:00:14.0[0m: PME# supported from D3hot D3cold
+[32m[    0.390722] [0m[33mpci 0000:00:14.2[0m: [8086:9d31] type 00 class 0x118000
+[32m[    0.390750] [0m[33mpci 0000:00:14.2[0m: reg 0x10: [mem 0xb132a000-0xb132afff 64bit]
+[32m[    0.392168] [0m[33mpci 0000:00:15.0[0m: [8086:9d60] type 00 class 0x118000
+[32m[    0.392203] [0m[33mpci 0000:00:15.0[0m: reg 0x10: [mem 0xb132b000-0xb132bfff 64bit]
+[32m[    0.393713] [0m[33mpci 0000:00:16.0[0m: [8086:9d3a] type 00 class 0x078000
+[32m[    0.393745] [0m[33mpci 0000:00:16.0[0m: reg 0x10: [mem 0xb132c000-0xb132cfff 64bit]
+[32m[    0.393836] [0m[33mpci 0000:00:16.0[0m: PME# supported from D3hot
+[32m[    0.395318] [0m[33mpci 0000:00:17.0[0m: [8086:9d03] type 00 class 0x010601
+[32m[    0.395342] [0m[33mpci 0000:00:17.0[0m: reg 0x10: [mem 0xb1328000-0xb1329fff]
+[32m[    0.395351] [0m[33mpci 0000:00:17.0[0m: reg 0x14: [mem 0xb132f000-0xb132f0ff]
+[32m[    0.395361] [0m[33mpci 0000:00:17.0[0m: reg 0x18: [io  0x4080-0x4087]
+[32m[    0.395371] [0m[33mpci 0000:00:17.0[0m: reg 0x1c: [io  0x4088-0x408b]
+[32m[    0.395380] [0m[33mpci 0000:00:17.0[0m: reg 0x20: [io  0x4060-0x407f]
+[32m[    0.395390] [0m[33mpci 0000:00:17.0[0m: reg 0x24: [mem 0xb132d000-0xb132d7ff]
+[32m[    0.395444] [0m[33mpci 0000:00:17.0[0m: PME# supported from D3hot
+[32m[    0.396857] [0m[33mpci 0000:00:1c.0[0m: [8086:9d14] type 01 class 0x060400
+[32m[    0.396961] [0m[33mpci 0000:00:1c.0[0m: PME# supported from D0 D3hot D3cold
+[32m[    0.398458] [0m[33mpci 0000:00:1c.5[0m: [8086:9d15] type 01 class 0x060400
+[32m[    0.398562] [0m[33mpci 0000:00:1c.5[0m: PME# supported from D0 D3hot D3cold
+[32m[    0.400042] [0m[33mpci 0000:00:1f.0[0m: [8086:9d4e] type 00 class 0x060100
+[32m[    0.401557] [0m[33mpci 0000:00:1f.2[0m: [8086:9d21] type 00 class 0x058000
+[32m[    0.401577] [0m[33mpci 0000:00:1f.2[0m: reg 0x10: [mem 0xb1324000-0xb1327fff]
+[32m[    0.403034] [0m[33mpci 0000:00:1f.3[0m: [8086:9d71] type 00 class 0x040300
+[32m[    0.403069] [0m[33mpci 0000:00:1f.3[0m: reg 0x10: [mem 0xb1320000-0xb1323fff 64bit]
+[32m[    0.403108] [0m[33mpci 0000:00:1f.3[0m: reg 0x20: [mem 0xb1300000-0xb130ffff 64bit]
+[32m[    0.403171] [0m[33mpci 0000:00:1f.3[0m: PME# supported from D3hot D3cold
+[32m[    0.404732] [0m[33mpci 0000:00:1f.4[0m: [8086:9d23] type 00 class 0x0c0500
+[32m[    0.404792] [0m[33mpci 0000:00:1f.4[0m: reg 0x10: [mem 0xb132e000-0xb132e0ff 64bit]
+[32m[    0.404862] [0m[33mpci 0000:00:1f.4[0m: reg 0x20: [io  0x4040-0x405f]
+[32m[    0.406405] [0m[33mpci 0000:01:00.0[0m: [10ec:8168] type 00 class 0x020000
+[32m[    0.406441] [0m[33mpci 0000:01:00.0[0m: reg 0x10: [io  0x3000-0x30ff]
+[32m[    0.406472] [0m[33mpci 0000:01:00.0[0m: reg 0x18: [mem 0xb1204000-0xb1204fff 64bit]
+[32m[    0.406492] [0m[33mpci 0000:01:00.0[0m: reg 0x20: [mem 0xb1200000-0xb1203fff 64bit]
+[32m[    0.406617] [0m[33mpci 0000:01:00.0[0m: supports D1 D2
+[32m[    0.406619] [0m[33mpci 0000:01:00.0[0m: PME# supported from D0 D1 D2 D3hot D3cold
+[32m[    0.406797] [0m[33mpci 0000:00:1c.0[0m: PCI bridge to [bus 01]
+[32m[    0.406801] [0m[33mpci 0000:00:1c.0[0m:   bridge window [io  0x3000-0x3fff]
+[32m[    0.406804] [0m[33mpci 0000:00:1c.0[0m:   bridge window [mem 0xb1200000-0xb12fffff]
+[32m[    0.406943] [0m[33mpci 0000:02:00.0[0m: [168c:0042] type 00 class 0x028000
+[32m[    0.407014] [0m[33mpci 0000:02:00.0[0m: reg 0x10: [mem 0xb1000000-0xb11fffff 64bit]
+[32m[    0.407337] [0m[33mpci 0000:02:00.0[0m: PME# supported from D0 D3hot D3cold
+[32m[    0.407623] [0m[33mpci 0000:00:1c.5[0m: PCI bridge to [bus 02]
+[32m[    0.407629] [0m[33mpci 0000:00:1c.5[0m:   bridge window [mem 0xb1000000-0xb11fffff]
+[32m[    0.409823] [0m[33mACPI[0m: PCI Interrupt Link [LNKA] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.409922] [0m[33mACPI[0m: PCI Interrupt Link [LNKB] (IRQs 3 4 5 6 *10 11 12 14 15)
+[32m[    0.410016] [0m[33mACPI[0m: PCI Interrupt Link [LNKC] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.410109] [0m[33mACPI[0m: PCI Interrupt Link [LNKD] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.410202] [0m[33mACPI[0m: PCI Interrupt Link [LNKE] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.410295] [0m[33mACPI[0m: PCI Interrupt Link [LNKF] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.410387] [0m[33mACPI[0m: PCI Interrupt Link [LNKG] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.410479] [0m[33mACPI[0m: PCI Interrupt Link [LNKH] (IRQs 3 4 5 6 10 *11 12 14 15)
+[32m[    0.411236] [0m[33mACPI[0m: EC: interrupt unblocked
+[32m[    0.411236] [0m[33mACPI[0m: EC: event unblocked
+[32m[    0.411236] [0m[33mACPI[0m: \_SB_.PCI0.LPCB.EC0_: GPE=0x4f, IRQ=-1, EC_CMD/EC_SC=0x66, EC_DATA=0x62
+[32m[    0.411236] [0m[33mACPI[0m: \_SB_.PCI0.LPCB.EC0_: Boot DSDT EC used to handle transactions and events
+[32m[    0.411239] [0m[33miommu[0m: Default domain type: Translated 
+[32m[    0.411239] [0m[33mpci 0000:00:02.0[0m: vgaarb: setting as boot VGA device
+[32m[    0.411239] [0m[33mpci 0000:00:02.0[0m: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+[32m[    0.411239] [0m[33mpci 0000:00:02.0[0m: vgaarb: bridge control possible
+[32m[    0.411239] [0m[33mvgaarb[0m: loaded
+[32m[    0.411239] [0m[33mACPI[0m: bus type USB registered
+[32m[    0.411239] [0m[33musbcore[0m: registered new interface driver usbfs
+[32m[    0.411239] [0m[33musbcore[0m: registered new interface driver hub
+[32m[    0.411239] [0m[33musbcore[0m: registered new device driver usb
+[32m[    0.411239] [0m[33mpps_core[0m: LinuxPPS API ver. 1 registered
+[32m[    0.411239] [0m[33mpps_core[0m: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[32m[    0.411239] [0mPTP clock support registered
+[32m[    0.411239] [0m[33mEDAC MC[0m: Ver: 3.0.0
+[32m[    0.411239] [0mRegistered efivars operations
+[32m[    0.411239] [0m[33mPCI[0m: Using ACPI for IRQ routing
+[32m[    0.440683] [0m[33mNetLabel[0m: Initializing
+[32m[    0.440684] [0m[33mNetLabel[0m:  domain hash size = 128
+[32m[    0.440684] [0m[33mNetLabel[0m:  protocols = UNLABELED CIPSOv4 CALIPSO
+[32m[    0.440714] [0m[33mNetLabel[0m:  unlabeled traffic allowed by default
+[32m[    0.442049] [0m[33mhpet0[0m: at MMIO 0xfed00000, IRQs 2, 8, 0, 0, 0, 0, 0, 0
+[32m[    0.442054] [0m[33mhpet0[0m: 8 comparators, 64-bit 24.000000 MHz counter
+[32m[    0.444095] [0m[33mclocksource[0m: Switched to clocksource tsc-early
+[32m[    0.457414] [0m[33mVFS[0m: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+[32m[    0.457559] [0m[33mAppArmor[0m: AppArmor Filesystem Enabled
+[32m[    0.457590] [0m[33mpnp[0m: PnP ACPI init
+[32m[    0.457796] [0m[33msystem 00:00[0m: [mem 0xfd000000-0xfdabffff] has been reserved
+[32m[    0.457798] [0m[33msystem 00:00[0m: [mem 0xfdad0000-0xfdadffff] has been reserved
+[32m[    0.457800] [0m[33msystem 00:00[0m: [mem 0xfdb00000-0xfdffffff] has been reserved
+[32m[    0.457802] [0m[33msystem 00:00[0m: [mem 0xfe000000-0xfe01ffff] has been reserved
+[32m[    0.457803] [0m[33msystem 00:00[0m: [mem 0xfe036000-0xfe03bfff] has been reserved
+[32m[    0.457805] [0m[33msystem 00:00[0m: [mem 0xfe03d000-0xfe3fffff] has been reserved
+[32m[    0.457807] [0m[33msystem 00:00[0m: [mem 0xfe410000-0xfe7fffff] has been reserved
+[32m[    0.458358] [0m[33msystem 00:01[0m: [io  0x2000-0x20fe] has been reserved
+[32m[    0.458749] [0m[33msystem 00:02[0m: [io  0x0680-0x069f] has been reserved
+[32m[    0.458751] [0m[33msystem 00:02[0m: [io  0xffff] has been reserved
+[32m[    0.458752] [0m[33msystem 00:02[0m: [io  0xffff] has been reserved
+[32m[    0.458754] [0m[33msystem 00:02[0m: [io  0xffff] has been reserved
+[32m[    0.458756] [0m[33msystem 00:02[0m: [io  0x1800-0x18fe] has been reserved
+[32m[    0.458757] [0m[33msystem 00:02[0m: [io  0x164e-0x164f] has been reserved
+[32m[    0.458991] [0m[33msystem 00:04[0m: [io  0x1854-0x1857] has been reserved
+[32m[    0.461273] [0m[33msystem 00:06[0m: [mem 0xfe029000-0xfe029fff] has been reserved
+[32m[    0.461276] [0m[33msystem 00:06[0m: [mem 0xfe028000-0xfe028fff] has been reserved
+[32m[    0.461277] [0m[33msystem 00:06[0m: [mem 0xfdaf0000-0xfdafffff] has been reserved
+[32m[    0.461279] [0m[33msystem 00:06[0m: [mem 0xfdae0000-0xfdaeffff] has been reserved
+[32m[    0.461280] [0m[33msystem 00:06[0m: [mem 0xfdac0000-0xfdacffff] has been reserved
+[32m[    0.462281] [0m[33msystem 00:07[0m: [mem 0xfed10000-0xfed17fff] has been reserved
+[32m[    0.462283] [0m[33msystem 00:07[0m: [mem 0xfed18000-0xfed18fff] has been reserved
+[32m[    0.462285] [0m[33msystem 00:07[0m: [mem 0xfed19000-0xfed19fff] has been reserved
+[32m[    0.462286] [0m[33msystem 00:07[0m: [mem 0xe0000000-0xefffffff] has been reserved
+[32m[    0.462288] [0m[33msystem 00:07[0m: [mem 0xfed20000-0xfed3ffff] has been reserved
+[32m[    0.462290] [0m[33msystem 00:07[0m: [mem 0xfed90000-0xfed93fff] could not be reserved
+[32m[    0.462292] [0m[33msystem 00:07[0m: [mem 0xfed45000-0xfed8ffff] could not be reserved
+[32m[    0.462295] [0m[33msystem 00:07[0m: [mem 0xff000000-0xffffffff] could not be reserved
+[32m[    0.462296] [0m[33msystem 00:07[0m: [mem 0xfee00000-0xfeefffff] could not be reserved
+[32m[    0.462298] [0m[33msystem 00:07[0m: [mem 0x90000000-0x9001ffff] has been reserved
+[32m[    0.462865] [0m[33mpnp[0m: PnP ACPI: found 8 devices
+[32m[    0.464475] [0m[33mthermal_sys[0m: Registered thermal governor 'fair_share'
+[32m[    0.464475] [0m[33mthermal_sys[0m: Registered thermal governor 'bang_bang'
+[32m[    0.464476] [0m[33mthermal_sys[0m: Registered thermal governor 'step_wise'
+[32m[    0.464477] [0m[33mthermal_sys[0m: Registered thermal governor 'user_space'
+[32m[    0.464478] [0m[33mthermal_sys[0m: Registered thermal governor 'power_allocator'
+[32m[    0.468990] [0m[33mclocksource[0m: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+[32m[    0.469036] [0m[33mpci 0000:00:1c.0[0m: PCI bridge to [bus 01]
+[32m[    0.469039] [0m[33mpci 0000:00:1c.0[0m:   bridge window [io  0x3000-0x3fff]
+[32m[    0.469044] [0m[33mpci 0000:00:1c.0[0m:   bridge window [mem 0xb1200000-0xb12fffff]
+[32m[    0.469052] [0m[33mpci 0000:00:1c.5[0m: PCI bridge to [bus 02]
+[32m[    0.469056] [0m[33mpci 0000:00:1c.5[0m:   bridge window [mem 0xb1000000-0xb11fffff]
+[32m[    0.469065] [0m[33mpci_bus 0000:00[0m: resource 4 [io  0x0000-0x0cf7 window]
+[32m[    0.469067] [0m[33mpci_bus 0000:00[0m: resource 5 [io  0x0d00-0xffff window]
+[32m[    0.469068] [0m[33mpci_bus 0000:00[0m: resource 6 [mem 0x000a0000-0x000bffff window]
+[32m[    0.469070] [0m[33mpci_bus 0000:00[0m: resource 7 [mem 0x000c0000-0x000c3fff window]
+[32m[    0.469071] [0m[33mpci_bus 0000:00[0m: resource 8 [mem 0x000c4000-0x000c7fff window]
+[32m[    0.469073] [0m[33mpci_bus 0000:00[0m: resource 9 [mem 0x000c8000-0x000cbfff window]
+[32m[    0.469074] [0m[33mpci_bus 0000:00[0m: resource 10 [mem 0x000cc000-0x000cffff window]
+[32m[    0.469075] [0m[33mpci_bus 0000:00[0m: resource 11 [mem 0x000d0000-0x000d3fff window]
+[32m[    0.469077] [0m[33mpci_bus 0000:00[0m: resource 12 [mem 0x000d4000-0x000d7fff window]
+[32m[    0.469078] [0m[33mpci_bus 0000:00[0m: resource 13 [mem 0x000d8000-0x000dbfff window]
+[32m[    0.469079] [0m[33mpci_bus 0000:00[0m: resource 14 [mem 0x000dc000-0x000dffff window]
+[32m[    0.469081] [0m[33mpci_bus 0000:00[0m: resource 15 [mem 0x90000000-0xdfffffff window]
+[32m[    0.469082] [0m[33mpci_bus 0000:00[0m: resource 16 [mem 0xfd000000-0xfe7fffff window]
+[32m[    0.469084] [0m[33mpci_bus 0000:01[0m: resource 0 [io  0x3000-0x3fff]
+[32m[    0.469085] [0m[33mpci_bus 0000:01[0m: resource 1 [mem 0xb1200000-0xb12fffff]
+[32m[    0.469087] [0m[33mpci_bus 0000:02[0m: resource 1 [mem 0xb1000000-0xb11fffff]
+[32m[    0.469336] [0m[33mNET[0m: Registered protocol family 2
+[32m[    0.469577] [0m[33mtcp_listen_portaddr_hash hash table entries[0m: 16384 (order: 6, 262144 bytes, linear)
+[32m[    0.469797] [0m[33mTCP established hash table entries[0m: 262144 (order: 9, 2097152 bytes, linear)
+[32m[    0.470205] [0m[33mTCP bind hash table entries[0m: 65536 (order: 8, 1048576 bytes, linear)
+[32m[    0.470308] [0m[33mTCP[0m: Hash tables configured (established 262144 bind 65536)
+[32m[    0.470388] [0m[33mUDP hash table entries[0m: 16384 (order: 7, 524288 bytes, linear)
+[32m[    0.470519] [0m[33mUDP-Lite hash table entries[0m: 16384 (order: 7, 524288 bytes, linear)
+[32m[    0.470642] [0m[33mNET[0m: Registered protocol family 1
+[32m[    0.470647] [0m[33mNET[0m: Registered protocol family 44
+[32m[    0.470660] [0m[33mpci 0000:00:02.0[0m: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+[32m[    0.472516] [0m[33mPCI[0m: CLS 64 bytes, default 64
+[32m[    0.472563] [0mTrying to unpack rootfs image as initramfs...
+[32m[    0.639308] [0m[33mFreeing initrd memory[0m: 48856K
+[32m[    0.639395] [0m[33mDMAR[0m: ACPI device "device:70" under DMAR at fed91000 as 00:15.0
+[32m[    0.661659] [0m[33mPCI-DMA[0m: Using software bounce buffering for IO (SWIOTLB)
+[32m[    0.661661] [0m[33msoftware IO TLB[0m: mapped [mem 0x8790b000-0x8b90b000] (64MB)
+[32m[    0.662041] [0m[33mcheck[0m: Scanning for low memory corruption every 60 seconds
+[32m[    0.662692] [0m[33mworkingset[0m: timestamp_bits=36 max_order=23 bucket_order=0
+[32m[    0.664378] [0m[33mzbud[0m: loaded
+[32m[    0.664866] [0m[33msquashfs[0m: version 4.0 (2009/01/31) Phillip Lougher
+[32m[    0.665057] [0m[33mfuse[0m: init (API version 7.31)
+[32m[    0.669725] [0mBlock layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+[32m[    0.669785] [0mio scheduler mq-deadline registered
+[32m[    0.670258] [0m[33mpcieport 0000:00:1c.0[0m: PME: Signaling with IRQ 122
+[32m[    0.670555] [0m[33mpcieport 0000:00:1c.5[0m: PME: Signaling with IRQ 123
+[32m[    0.670635] [0m[33mshpchp[0m: Standard Hot Plug PCI Controller Driver version: 0.4
+[32m[    0.670703] [0m[33mefifb[0m: probing for efifb
+[32m[    0.670737] [0m[33mefifb[0m: showing boot graphics
+[32m[    0.672604] [0m[33mefifb[0m: framebuffer at 0xa0000000, using 8100k, total 8100k
+[32m[    0.672605] [0m[33mefifb[0m: mode is 1920x1080x32, linelength=7680, pages=1
+[32m[    0.672606] [0m[33mefifb[0m: scrolling: redraw
+[32m[    0.672608] [0m[33mefifb[0m: Truecolor: size=8:8:8:8, shift=24:16:8:0
+[32m[    0.672657] [0m[33mfbcon[0m: Deferring console take-over
+[32m[    0.672658] [0m[33mfb0[0m: EFI VGA frame buffer device
+[32m[    0.673487] [0m[33mACPI[0m: AC Adapter [ADP0] (on-line)
+[32m[    0.673595] [0m[33minput[0m: Lid Switch as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0D:00/input/input0
+[32m[    0.673615] [0m[33mACPI[0m: Lid Switch [LID0]
+[32m[    0.673649] [0m[33minput[0m: Power Button as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1
+[32m[    0.673667] [0m[33mACPI[0m: Power Button [PWRB]
+[32m[    0.676279] [0m[33mSerial[0m: 8250/16550 driver, 32 ports, IRQ sharing enabled
+[32m[    0.678620] [0mLinux agpgart interface v0.103
+[32m[    0.749900] [0m[33mloop[0m: module loaded
+[32m[    0.750198] [0m[33mlibphy[0m: Fixed MDIO Bus: probed
+[32m[    0.750199] [0m[33mtun[0m: Universal TUN/TAP device driver, 1.6
+[32m[    0.750281] [0mPPP generic driver version 2.4.2
+[32m[    0.750457] [0m[33mVFIO - User Level meta-driver version[0m: 0.3
+[32m[    0.750622] [0m[33mehci_hcd[0m: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[32m[    0.750627] [0m[33mehci-pci[0m: EHCI PCI platform driver
+[32m[    0.750639] [0m[33mehci-platform[0m: EHCI generic platform driver
+[32m[    0.750651] [0m[33mohci_hcd[0m: USB 1.1 'Open' Host Controller (OHCI) Driver
+[32m[    0.750657] [0m[33mohci-pci[0m: OHCI PCI platform driver
+[32m[    0.750665] [0m[33mohci-platform[0m: OHCI generic platform driver
+[32m[    0.750673] [0m[33muhci_hcd[0m: USB Universal Host Controller Interface driver
+[32m[    0.750944] [0m[33mxhci_hcd 0000:00:14.0[0m: xHCI Host Controller
+[32m[    0.750952] [0m[33mxhci_hcd 0000:00:14.0[0m: new USB bus registered, assigned bus number 1
+[32m[    0.752029] [0m[33mxhci_hcd 0000:00:14.0[0m: hcc params 0x200077c1 hci version 0x100 quirks 0x0000000081109810
+[32m[    0.752297] [0m[33mxhci_hcd 0000:00:14.0[0m: cache line size of 64 is not supported
+[32m[    0.752505] [0m[33musb usb1[0m: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 5.04
+[32m[    0.752507] [0m[33musb usb1[0m: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[    0.752509] [0m[33musb usb1[0m: Product: xHCI Host Controller
+[32m[    0.752510] [0m[33musb usb1[0m: Manufacturer: Linux 5.4.0-58-generic xhci-hcd
+[32m[    0.752511] [0m[33musb usb1[0m: SerialNumber: 0000:00:14.0
+[32m[    0.752649] [0m[33mhub 1-0:1.0[0m: USB hub found
+[32m[    0.752667] [0m[33mhub 1-0:1.0[0m: 12 ports detected
+[32m[    0.753316] [0m[33mxhci_hcd 0000:00:14.0[0m: xHCI Host Controller
+[32m[    0.753321] [0m[33mxhci_hcd 0000:00:14.0[0m: new USB bus registered, assigned bus number 2
+[32m[    0.753324] [0m[33mxhci_hcd 0000:00:14.0[0m: Host supports USB 3.0 SuperSpeed
+[32m[    0.753364] [0m[33musb usb2[0m: New USB device found, idVendor=1d6b, idProduct=0003, bcdDevice= 5.04
+[32m[    0.753365] [0m[33musb usb2[0m: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[32m[    0.753367] [0m[33musb usb2[0m: Product: xHCI Host Controller
+[32m[    0.753368] [0m[33musb usb2[0m: Manufacturer: Linux 5.4.0-58-generic xhci-hcd
+[32m[    0.753369] [0m[33musb usb2[0m: SerialNumber: 0000:00:14.0
+[32m[    0.753501] [0m[33mhub 2-0:1.0[0m: USB hub found
+[32m[    0.753513] [0m[33mhub 2-0:1.0[0m: 6 ports detected
+[32m[    0.753863] [0m[33mi8042[0m: PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+[32m[    0.760972] [0m[33mserio[0m: i8042 KBD port at 0x60,0x64 irq 1
+[32m[    0.761149] [0m[33mmousedev[0m: PS/2 mouse device common for all mice
+[32m[    0.761779] [0m[33mrtc_cmos 00:03[0m: RTC can wake from S4
+[32m[    0.762326] [0m[33mrtc_cmos 00:03[0m: registered as rtc0
+[32m[    0.762362] [0m[33mrtc_cmos 00:03[0m: alarms up to one month, y3k, 242 bytes nvram, hpet irqs
+[32m[    0.762369] [0mi2c /dev entries driver
+[32m[    0.762416] [0m[33mdevice-mapper[0m: uevent: version 1.0.3
+[32m[    0.762545] [0m[33mdevice-mapper[0m: ioctl: 4.41.0-ioctl (2019-09-16) initialised: dm-devel@redhat.com
+[32m[    0.762566] [0m[33mplatform eisa.0[0m: Probing EISA bus 0
+[32m[    0.762579] [0m[33mplatform eisa.0[0m: EISA: Detected 0 cards
+[32m[    0.762583] [0m[33mintel_pstate[0m: Intel P-state driver initializing
+[32m[    0.763743] [0m[33mintel_pstate[0m: HWP enabled
+[32m[    0.763958] [0m[33mledtrig-cpu[0m: registered to indicate activity on CPUs
+[32m[    0.763961] [0mEFI Variables Facility v0.08 2004-May-17
+[32m[    0.770034] [0m[33mbattery[0m: ACPI: Battery Slot [BAT0] (battery present)
+[32m[    0.771559] [0m[33minput[0m: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+[32m[    0.802739] [0m[33mintel_pmc_core intel_pmc_core.0[0m:  initialized
+[32m[    0.802800] [0m[33mdrop_monitor[0m: Initializing network drop monitor service
+[32m[    0.802937] [0m[33mNET[0m: Registered protocol family 10
+[32m[    0.807576] [0mSegment Routing with IPv6
+[32m[    0.807589] [0m[33mNET[0m: Registered protocol family 17
+[32m[    0.808491] [0m[33mRAS[0m: Correctable Errors collector initialized.
+[32m[    0.808556] [0m[33mmicrocode[0m: sig=0x806ea, pf=0x80, revision=0xe0
+[32m[    0.808831] [0m[33mmicrocode[0m: Microcode Update Driver: v2.2.
+[32m[    0.808833] [0m[33mIPI shorthand broadcast[0m: enabled
+[32m[    0.808838] [0m[33msched_clock[0m: Marking stable (808076885, 752030)->(818686807, -9857892)
+[32m[    0.809101] [0mregistered taskstats version 1
+[32m[    0.809723] [0m[33mzswap[0m: loaded using pool lzo/zbud
+[32m[    0.816568] [0m[33mAppArmor[0m: AppArmor sha1 policy hashing enabled
+[32m[    0.818681] [0m[33mintegrity[0m: Loading X.509 certificate: UEFI:db
+[32m[    0.818716] [0m[33mintegrity[0m: Loading X.509 certificate: UEFI:db
+[32m[    0.818729] [0m[33mintegrity[0m: Loading X.509 certificate: UEFI:db
+[32m[    0.818738] [0m[33mintegrity[0m: Loading X.509 certificate: UEFI:db
+[32m[    0.818741] [0mError adding keys to platform keyring UEFI:db
+[32m[    0.819421] [0m[33mintegrity[0m: Loading X.509 certificate: UEFI:MokListRT
+[32m[    0.819452] [0m[33mintegrity[0m: Loading X.509 certificate: UEFI:MokListRT
+[32m[    0.822096] [0m[33mima[0m: Allocated hash algorithm: sha1
+[32m[    1.002305] [0m[33mima[0m: No architecture policies found
+[32m[    1.002341] [0m[33mevm[0m: Initialising EVM extended attributes:
+[32m[    1.002341] [0m[33mevm[0m: security.selinux
+[32m[    1.002342] [0m[33mevm[0m: security.SMACK64
+[32m[    1.002342] [0m[33mevm[0m: security.SMACK64EXEC
+[32m[    1.002342] [0m[33mevm[0m: security.SMACK64TRANSMUTE
+[32m[    1.002342] [0m[33mevm[0m: security.SMACK64MMAP
+[32m[    1.002343] [0m[33mevm[0m: security.apparmor
+[32m[    1.002343] [0m[33mevm[0m: security.ima
+[32m[    1.002343] [0m[33mevm[0m: security.capability
+[32m[    1.002344] [0m[33mevm[0m: HMAC attrs: 0x1
+[32m[    1.003096] [0m[33mPM[0m:   Magic number: 0:11:497
+[32m[    1.003319] [0m[33mrtc_cmos 00:03[0m: setting system clock to 2020-12-27T19:28:09 UTC (1609097289)
+[32m[    1.004345] [0m[33mFreeing unused decrypted memory[0m: 2040K
+[32m[    1.004713] [0m[33mFreeing unused kernel image memory[0m: 2720K
+[32m[    1.004791] [0m[33mWrite protecting the kernel read-only data[0m: 22528k
+[32m[    1.005231] [0m[33mFreeing unused kernel image memory[0m: 2008K
+[32m[    1.005419] [0m[33mFreeing unused kernel image memory[0m: 1212K
+[32m[    1.012036] [0m[33mx86/mm[0m: Checked W+X mappings: passed, no W+X pages found.
+[32m[    1.012037] [0m[33mx86/mm[0m: Checking user space page tables
+[32m[    1.018541] [0m[33mx86/mm[0m: Checked W+X mappings: passed, no W+X pages found.
+[32m[    1.018542] [0mRun /init as init process
+[32m[    1.088037] [0m[33mhidraw[0m: raw HID events driver (C) Jiri Kosina
+[32m[    1.089554] [0m[33musb 1-3[0m: new high-speed USB device number 2 using xhci_hcd
+[32m[    1.092829] [0m[33mi801_smbus 0000:00:1f.4[0m: SPD Write Disable is set
+[32m[    1.092960] [0m[33mahci 0000:00:17.0[0m: AHCI 0001.0301 32 slots 2 ports 6 Gbps 0x3 impl SATA mode
+[32m[    1.092963] [0m[33mahci 0000:00:17.0[0m: flags: 64bit ncq pm led clo only pio slum part deso sadm sds apst 
+[32m[    1.093192] [0m[33mi801_smbus 0000:00:1f.4[0m: SMBus using PCI interrupt
+[32m[    1.094270] [0m[33mintel-lpss 0000:00:15.0[0m: enabling device (0000 -> 0002)
+[32m[    1.095120] [0m[33midma64 idma64.0[0m: Found Intel integrated DMA 64-bit
+[32m[    1.097750] [0m[33mscsi host0[0m: ahci
+[32m[    1.097914] [0m[33mscsi host1[0m: ahci
+[32m[    1.097993] [0m[33mata1[0m: SATA max UDMA/133 abar m2048@0xb132d000 port 0xb132d100 irq 125
+[32m[    1.097995] [0m[33mata2[0m: SATA max UDMA/133 abar m2048@0xb132d000 port 0xb132d180 irq 125
+[32m[    1.107604] [0m[33mlibphy[0m: r8169: probed
+[32m[    1.107790] [0m[33mr8169 0000:01:00.0 eth0[0m: RTL8168gu/8111gu, e8:6a:64:6b:67:71, XID 509, IRQ 126
+[32m[    1.107793] [0m[33mr8169 0000:01:00.0 eth0[0m: jumbo features [frames: 9200 bytes, tx checksumming: ko]
+[32m[    1.113298] [0m[33mr8169 0000:01:00.0 enp1s0[0m: renamed from eth0
+[32m[    1.242890] [0m[33musb 1-3[0m: New USB device found, idVendor=2109, idProduct=3431, bcdDevice= 2.76
+[32m[    1.242891] [0m[33musb 1-3[0m: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[32m[    1.242892] [0m[33musb 1-3[0m: Product: USB2.0 Hub
+[32m[    1.244153] [0m[33mhub 1-3:1.0[0m: USB hub found
+[32m[    1.244337] [0m[33mhub 1-3:1.0[0m: 4 ports detected
+[32m[    1.370865] [0m[33musb 2-3[0m: new SuperSpeed Gen 1 USB device number 2 using xhci_hcd
+[32m[    1.413878] [0m[33mata1[0m: SATA link up 6.0 Gbps (SStatus 133 SControl 300)
+[32m[    1.415100] [0m[33mata1.00[0m: ATA-11: SanDisk SD9SB8W512G1101, X6106001, max UDMA/133
+[32m[    1.415101] [0m[33mata1.00[0m: 1000215216 sectors, multi 1: LBA48 NCQ (depth 32), AA
+[32m[    1.417437] [0m[33mata1.00[0m: configured for UDMA/133
+[32m[    1.418948] [0m[33mata2[0m: SATA link down (SStatus 4 SControl 300)
+[32m[    1.427904] [0m[33mahci 0000:00:17.0[0m: port does not support device sleep
+[32m[    1.457174] [0m[33m sda[0m: sda1 sda2
+[32m[    1.460171] [0m[33minput[0m: AUI1667:00 044E:121E Mouse as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-AUI1667:00/0018:044E:121E.0001/input/input3
+[32m[    1.460230] [0m[33minput[0m: AUI1667:00 044E:121E Keyboard as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-AUI1667:00/0018:044E:121E.0001/input/input4
+[32m[    1.460259] [0m[33minput[0m: AUI1667:00 044E:121E as /devices/pci0000:00/0000:00:15.0/i2c_designware.0/i2c-1/i2c-AUI1667:00/0018:044E:121E.0001/input/input5
+[32m[    1.460291] [0m[33mhid-generic 0018:044E:121E.0001[0m: input,hidraw0: I2C HID v1.00 Mouse [AUI1667:00 044E:121E] on i2c-AUI1667:00
+[32m[    1.658320] [0m[33musb 1-7[0m: new full-speed USB device number 3 using xhci_hcd
+[32m[    1.672948] [0m[33musb 2-3[0m: New USB device found, idVendor=2109, idProduct=0810, bcdDevice= 3.76
+[32m[    1.672949] [0m[33musb 2-3[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[    1.672950] [0m[33musb 2-3[0m: Product: 4-Port USB 3.0 Hub
+[32m[    1.672951] [0m[33musb 2-3[0m: Manufacturer: VIA Labs, Inc.
+[32m[    1.694317] [0m[33mtsc[0m: Refined TSC clocksource calibration: 1991.999 MHz
+[32m[    1.694323] [0m[33mclocksource[0m: tsc: mask: 0xffffffffffffffff max_cycles: 0x396d4ffc055, max_idle_ns: 881590662783 ns
+[32m[    1.694376] [0m[33mclocksource[0m: Switched to clocksource tsc
+[32m[    1.743409] [0m[33mhub 2-3:1.0[0m: USB hub found
+[32m[    1.747686] [0m[33mhub 2-3:1.0[0m: 4 ports detected
+[32m[    1.810101] [0m[33musb 1-7[0m: New USB device found, idVendor=0cf3, idProduct=e500, bcdDevice= 0.01
+[32m[    1.810102] [0m[33musb 1-7[0m: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[32m[    1.885956] [0m[33musb 1-3.2[0m: new low-speed USB device number 4 using xhci_hcd
+[32m[    1.993716] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[    1.993717] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[    1.993718] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[    1.993719] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[    2.114321] [0m[33musb 1-8[0m: new high-speed USB device number 5 using xhci_hcd
+[32m[    2.285377] [0m[33musb 1-8[0m: New USB device found, idVendor=04f2, idProduct=b5d7, bcdDevice=14.07
+[32m[    2.285378] [0m[33musb 1-8[0m: New USB device strings: Mfr=3, Product=1, SerialNumber=2
+[32m[    2.285379] [0m[33musb 1-8[0m: Product: EasyCamera
+[32m[    2.285380] [0m[33musb 1-8[0m: Manufacturer: Chicony Electronics Co.,Ltd.
+[32m[    2.285380] [0m[33musb 1-8[0m: SerialNumber: 0x0001
+[32m[    2.342315] [0m[33musb 1-3.3[0m: new full-speed USB device number 6 using xhci_hcd
+[32m[    2.452178] [0m[33musb 1-3.3[0m: New USB device found, idVendor=046d, idProduct=c52b, bcdDevice=12.10
+[32m[    2.452179] [0m[33musb 1-3.3[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[    2.452180] [0m[33musb 1-3.3[0m: Product: USB Receiver
+[32m[    2.452181] [0m[33musb 1-3.3[0m: Manufacturer: Logitech
+[32m[    2.472774] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0002/input/input6
+[32m[    2.473113] [0m[33mhid-generic 0003:046D:C077.0002[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[    2.474481] [0m[33minput[0m: Logitech USB Receiver as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.0/0003:046D:C52B.0003/input/input7
+[32m[    2.534625] [0m[33mhid-generic 0003:046D:C52B.0003[0m: input,hidraw2: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:00:14.0-3.3/input0
+[32m[    2.537759] [0m[33minput[0m: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.1/0003:046D:C52B.0004/input/input8
+[32m[    2.538035] [0m[33minput[0m: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.1/0003:046D:C52B.0004/input/input9
+[32m[    2.598508] [0m[33minput[0m: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.1/0003:046D:C52B.0004/input/input10
+[32m[    2.598866] [0m[33mhid-generic 0003:046D:C52B.0004[0m: input,hiddev0,hidraw3: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:00:14.0-3.3/input1
+[32m[    2.600987] [0m[33mhid-generic 0003:046D:C52B.0005[0m: hiddev1,hidraw4: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:00:14.0-3.3/input2
+[32m[    2.601007] [0m[33musbcore[0m: registered new interface driver usbhid
+[32m[    2.601007] [0m[33musbhid[0m: USB HID core driver
+[32m[    2.787428] [0m[33mlogitech-djreceiver 0003:046D:C52B.0005[0m: hiddev0,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:00:14.0-3.3/input2
+[32m[    2.908099] [0m[33minput[0m: Logitech Unifying Device. Wireless PID:4102 Keyboard as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.2/0003:046D:C52B.0005/0003:046D:4102.0006/input/input12
+[32m[    2.908182] [0m[33minput[0m: Logitech Unifying Device. Wireless PID:4102 Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.2/0003:046D:C52B.0005/0003:046D:4102.0006/input/input13
+[32m[    2.908354] [0m[33minput[0m: Logitech Unifying Device. Wireless PID:4102 Consumer Control as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.2/0003:046D:C52B.0005/0003:046D:4102.0006/input/input14
+[32m[    2.908409] [0m[33minput[0m: Logitech Unifying Device. Wireless PID:4102 System Control as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.2/0003:046D:C52B.0005/0003:046D:4102.0006/input/input15
+[32m[    2.908464] [0m[33mhid-generic 0003:046D:4102.0006[0m: input,hidraw3: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:4102] on usb-0000:00:14.0-3.3/input2:1
+[32m[    3.114133] [0m[33minput[0m: Logitech TK820 as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.3/1-3.3:1.2/0003:046D:C52B.0005/0003:046D:4102.0006/input/input19
+[32m[    3.114378] [0m[33mlogitech-hidpp-device 0003:046D:4102.0006[0m: input,hidraw3: USB HID v1.11 Keyboard [Logitech TK820] on usb-0000:00:14.0-3.3/input2:1
+[32m[    3.156343] [0m[33mfbcon[0m: Taking over console
+[32m[    3.156403] [0m[33mConsole[0m: switching to colour frame buffer device 240x67
+[32m[    3.163899] [0m[33mEXT4-fs (sda2)[0m: mounted filesystem with ordered data mode. Opts: (null)
+[32m[    3.753888] [0m[33mRPC[0m: Registered named UNIX socket transport module.
+[32m[    3.753890] [0m[33mRPC[0m: Registered udp transport module.
+[32m[    3.753891] [0m[33mRPC[0m: Registered tcp transport module.
+[32m[    3.753891] [0m[33mRPC[0m: Registered tcp NFSv4.1 backchannel transport module.
+[32m[    3.767425] [0m[33mEXT4-fs (sda2)[0m: re-mounted. Opts: errors=remount-ro
+[32m[    3.772798] [0m[33mlp[0m: driver loaded but no devices found
+[32m[    3.775305] [0mInstalling knfsd (copyright (C) 1996 okir@monad.swb.de).
+[32m[    3.780398] [0m[33mppdev[0m: user-space parallel port driver
+[32m[    3.857662] [0mAdding 2097148k swap on /swapfile.  Priority:-2 extents:6 across:2260988k SSFS
+[32m[    4.265915] [0m[33minput[0m: Ideapad extra buttons as /devices/pci0000:00/0000:00:1f.0/PNP0C09:00/VPC2004:00/input/input20
+[32m[    4.272828] [0m[33mmei_me 0000:00:16.0[0m: enabling device (0000 -> 0002)
+[32m[    4.330894] [0m[33mmc[0m: Linux media interface: v0.10
+[32m[    4.332953] [0m[33mBluetooth[0m: Core ver 2.22
+[32m[    4.332965] [0m[33mNET[0m: Registered protocol family 31
+[32m[    4.332965] [0m[33mBluetooth[0m: HCI device and connection manager initialized
+[32m[    4.332968] [0m[33mBluetooth[0m: HCI socket layer initialized
+[32m[    4.332969] [0m[33mBluetooth[0m: L2CAP socket layer initialized
+[32m[    4.332971] [0m[33mBluetooth[0m: SCO socket layer initialized
+[32m[    4.341292] [0m[33mvideodev[0m: Linux video capture interface: v2.00
+[32m[    4.341342] [0m[33mfb0[0m: switching to inteldrmfb from EFI VGA
+[32m[    4.341453] [0m[33mConsole[0m: switching to colour dummy device 80x25
+[32m[    4.341498] [0m[33mi915 0000:00:02.0[0m: vgaarb: deactivate vga console
+[32m[    4.344467] [0m[drm] Supports vblank timestamp caching Rev 2 (21.10.2013).
+[32m[    4.344468] [0m[drm] Driver supports precise vblank timestamp query.
+[32m[    4.345199] [0m[33mi915 0000:00:02.0[0m: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[32m[    4.356045] [0m[drm] Finished loading DMC firmware i915/kbl_dmc_ver1_04.bin (v1.4)
+[32m[    4.356287] [0m[drm] Initialized i915 1.6.0 20190822 for 0000:00:02.0 on minor 0
+[32m[    4.358413] [0m[33mACPI[0m: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+[32m[    4.358742] [0m[33minput[0m: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input21
+[32m[    4.363189] [0m[33mRAPL PMU[0m: API unit is 2^-32 Joules, 5 fixed counters, 655360 ms ovfl timer
+[32m[    4.363190] [0m[33mRAPL PMU[0m: hw unit of domain pp0-core 2^-14 Joules
+[32m[    4.363191] [0m[33mRAPL PMU[0m: hw unit of domain package 2^-14 Joules
+[32m[    4.363191] [0m[33mRAPL PMU[0m: hw unit of domain dram 2^-14 Joules
+[32m[    4.363192] [0m[33mRAPL PMU[0m: hw unit of domain pp1-gpu 2^-14 Joules
+[32m[    4.363192] [0m[33mRAPL PMU[0m: hw unit of domain psys 2^-14 Joules
+[32m[    4.367343] [0m[33musbcore[0m: registered new interface driver btusb
+[32m[    4.373574] [0m[33mcryptd[0m: max_cpu_qlen set to 1000
+[32m[    4.382992] [0mAVX2 version of gcm_enc/dec engaged.
+[32m[    4.382993] [0mAES CTR mode by8 optimization enabled
+[32m[    4.383696] [0m[33muvcvideo[0m: Found UVC 1.00 device EasyCamera (04f2:b5d7)
+[32m[    4.391728] [0m[33minput[0m: EasyCamera: EasyCamera as /devices/pci0000:00/0000:00:14.0/usb1/1-8/1-8:1.0/input/input22
+[32m[    4.391792] [0m[33musbcore[0m: registered new interface driver uvcvideo
+[32m[    4.391793] [0mUSB Video Class driver (1.1.1)
+[32m[    4.394858] [0m[33mfbcon[0m: i915drmfb (fb0) is primary device
+[32m[    4.394937] [0m[33mConsole[0m: switching to colour frame buffer device 240x67
+[32m[    4.394978] [0m[33mi915 0000:00:02.0[0m: fb0: i915drmfb frame buffer device
+[32m[    4.454028] [0m[33math10k_pci 0000:02:00.0[0m: pci irq msi oper_irq_mode 2 irq_mode 0 reset_mode 0
+[32m[    4.508190] [0m[33mmei_hdcp 0000:00:16.0-b638ab7e-94e2-4ea2-a552-d1c54b627f04[0m: bound 0000:00:02.0 (ops i915_hdcp_component_ops [i915])
+[32m[    4.551195] [0m[33mintel_rapl_common[0m: Found RAPL domain package
+[32m[    4.551196] [0m[33mintel_rapl_common[0m: Found RAPL domain core
+[32m[    4.551196] [0m[33mintel_rapl_common[0m: Found RAPL domain uncore
+[32m[    4.551197] [0m[33mintel_rapl_common[0m: Found RAPL domain dram
+[32m[    4.738937] [0m[33math10k_pci 0000:02:00.0[0m: qca9377 hw1.1 target 0x05020001 chip_id 0x003821ff sub 17aa:0901
+[32m[    4.738939] [0m[33math10k_pci 0000:02:00.0[0m: kconfig debug 0 debugfs 1 tracing 1 dfs 0 testmode 0
+[32m[    4.739280] [0m[33math10k_pci 0000:02:00.0[0m: firmware ver WLAN.TF.2.1-00021-QCARMSWP-1 api 6 features wowlan,ignore-otp crc32 42e41877
+[32m[    4.805616] [0m[33math10k_pci 0000:02:00.0[0m: board_file api 2 bmi_id N/A crc32 8aedfa4a
+[32m[    4.901694] [0m[33math10k_pci 0000:02:00.0[0m: htt-ver 3.56 wmi-op 4 htt-op 3 cal otp max-sta 32 raw 0 hwcrypto 1
+[32m[    4.999165] [0m[33math10k_pci 0000:02:00.0 wlp2s0[0m: renamed from wlan0
+[32m[    5.829961] [0m[33msnd_hda_intel 0000:00:1f.3[0m: bound 0000:00:02.0 (ops i915_audio_component_bind_ops [i915])
+[32m[    5.859245] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m: autoconfig for Generic: line_outs=1 (0x14/0x0/0x0/0x0/0x0) type:speaker
+[32m[    5.859247] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m:    speaker_outs=0 (0x0/0x0/0x0/0x0/0x0)
+[32m[    5.859247] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m:    hp_outs=1 (0x21/0x0/0x0/0x0/0x0)
+[32m[    5.859248] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m:    mono: mono_out=0x0
+[32m[    5.859248] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m:    inputs:
+[32m[    5.859249] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m:      Mic=0x19
+[32m[    5.859250] [0m[33msnd_hda_codec_generic hdaudioC0D0[0m:      Internal Mic=0x12
+[32m[    5.870622] [0m[33minput[0m: HDA Intel PCH Mic as /devices/pci0000:00/0000:00:1f.3/sound/card0/input23
+[32m[    5.870667] [0m[33minput[0m: HDA Intel PCH Headphone as /devices/pci0000:00/0000:00:1f.3/sound/card0/input24
+[32m[    5.870696] [0m[33minput[0m: HDA Intel PCH HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input25
+[32m[    5.870725] [0m[33minput[0m: HDA Intel PCH HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input26
+[32m[    5.870753] [0m[33minput[0m: HDA Intel PCH HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input27
+[32m[    5.870779] [0m[33minput[0m: HDA Intel PCH HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input28
+[32m[    5.870805] [0m[33minput[0m: HDA Intel PCH HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:1f.3/sound/card0/input29
+[32m[    6.230002] [0m[33m8021q[0m: 802.1Q VLAN Support v1.8
+[32m[    6.276701] [0m[33mGeneric FE-GE Realtek PHY r8169-100:00[0m: attached PHY driver [Generic FE-GE Realtek PHY] (mii_bus:phy_addr=r8169-100:00, irq=IGNORE)
+[32m[    6.338931] [0m[33mBluetooth[0m: BNEP (Ethernet Emulation) ver 1.3
+[32m[    6.338932] [0m[33mBluetooth[0m: BNEP filters: protocol multicast
+[32m[    6.338934] [0m[33mBluetooth[0m: BNEP socket layer initialized
+[32m[    6.353442] [0m[33mNET[0m: Registered protocol family 38
+[32m[    6.399121] [0m[33mr8169 0000:01:00.0 enp1s0[0m: Link is Down
+[32m[    6.707554] [0maufs 5.4.3-20200302
+[32m[    7.498782] [0m[33mNFSD[0m: starting 90-second grace period (net f00000a8)
+[32m[    8.891227] [0m[33mr8169 0000:01:00.0 enp1s0[0m: Link is Up - 1Gbps/Full - flow control rx/tx
+[32m[    8.891236] [0m[33mIPv6[0m: ADDRCONF(NETDEV_CHANGE): enp1s0: link becomes ready
+[32m[   11.951624] [0m[33mbridge[0m: filtering via arp/ip/ip6tables is no longer available by default. Update your scripts to load br_netfilter if you need this.
+[32m[   11.969642] [0m[33mbpfilter[0m: Loaded bpfilter_umh pid 1940
+[32m[   12.066673] [0mInitializing XFRM netlink socket
+[32m[   15.308039] [0m[33mlogitech-hidpp-device 0003:046D:4102.0006[0m: HID++ 2.0 device connected.
+[32m[   20.343587] [0m[33mBluetooth[0m: RFCOMM TTY layer initialized
+[32m[   20.343590] [0m[33mBluetooth[0m: RFCOMM socket layer initialized
+[32m[   20.343594] [0m[33mBluetooth[0m: RFCOMM ver 1.11
+[32m[29763.189671] [0m[33mperf[0m: interrupt took too long (2521 > 2500), lowering kernel.perf_event_max_sample_rate to 79250
+[32m[41125.367627] [0m[33mperf[0m: interrupt took too long (3205 > 3151), lowering kernel.perf_event_max_sample_rate to 62250
+[32m[55687.566911] [0m[33mperf[0m: interrupt took too long (4033 > 4006), lowering kernel.perf_event_max_sample_rate to 49500
+[32m[67218.087667] [0m[33mperf[0m: interrupt took too long (5058 > 5041), lowering kernel.perf_event_max_sample_rate to 39500
+[32m[87567.298336] [0m[33mperf[0m: interrupt took too long (6361 > 6322), lowering kernel.perf_event_max_sample_rate to 31250
+[32m[103281.961460] [0m[33mperf[0m: interrupt took too long (7958 > 7951), lowering kernel.perf_event_max_sample_rate to 25000
+[32m[131009.380520] [0m[33mperf[0m: interrupt took too long (9957 > 9947), lowering kernel.perf_event_max_sample_rate to 20000
+[32m[162267.040036] [0m[33musb 1-3.2[0m: USB disconnect, device number 4
+[32m[162268.800736] [0m[33musb 1-3.2[0m: new low-speed USB device number 7 using xhci_hcd
+[32m[162268.905746] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[162268.905753] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[162268.905756] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[162268.905759] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[162268.911490] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0007/input/input30
+[32m[162268.912110] [0m[33mhid-generic 0003:046D:C077.0007[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163016.864352] [0m[33musb 1-3.2[0m: USB disconnect, device number 7
+[32m[163020.157225] [0m[33musb 1-3.2[0m: new low-speed USB device number 8 using xhci_hcd
+[32m[163020.261195] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163020.261201] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163020.261205] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163020.261208] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163020.266770] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0008/input/input31
+[32m[163020.267324] [0m[33mhid-generic 0003:046D:C077.0008[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163126.688246] [0m[33musb 1-3.2[0m: USB disconnect, device number 8
+[32m[163128.189416] [0m[33musb 1-3.2[0m: new low-speed USB device number 9 using xhci_hcd
+[32m[163128.294060] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163128.294063] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163128.294064] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163128.294065] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163128.299347] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0009/input/input32
+[32m[163128.299587] [0m[33mhid-generic 0003:046D:C077.0009[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163130.528530] [0m[33musb 1-3.2[0m: USB disconnect, device number 9
+[32m[163131.773438] [0m[33musb 1-3.2[0m: new low-speed USB device number 10 using xhci_hcd
+[32m[163131.879270] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163131.879273] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163131.879274] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163131.879276] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163131.884444] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.000A/input/input33
+[32m[163131.884730] [0m[33mhid-generic 0003:046D:C077.000A[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163259.039932] [0m[33musb 1-3.2[0m: USB disconnect, device number 10
+[32m[163260.798102] [0m[33musb 1-3.2[0m: new low-speed USB device number 11 using xhci_hcd
+[32m[163260.903203] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163260.903205] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163260.903206] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163260.903207] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163260.908016] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.000B/input/input34
+[32m[163260.908173] [0m[33mhid-generic 0003:046D:C077.000B[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163262.368291] [0m[33musb 1-3.2[0m: USB disconnect, device number 11
+[32m[163263.870161] [0m[33musb 1-3.2[0m: new low-speed USB device number 12 using xhci_hcd
+[32m[163263.979955] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163263.979958] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163263.979960] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163263.979961] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163263.984938] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.000C/input/input35
+[32m[163263.985192] [0m[33mhid-generic 0003:046D:C077.000C[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163272.864327] [0m[33musb 1-3.2[0m: USB disconnect, device number 12
+[32m[163274.626161] [0m[33musb 1-3.2[0m: new low-speed USB device number 13 using xhci_hcd
+[32m[163274.742367] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163274.742370] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163274.742372] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163274.742374] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163274.747741] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.000D/input/input36
+[32m[163274.748127] [0m[33mhid-generic 0003:046D:C077.000D[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163277.216335] [0m[33musb 1-3.2[0m: USB disconnect, device number 13
+[32m[163278.718441] [0m[33musb 1-3.2[0m: new low-speed USB device number 14 using xhci_hcd
+[32m[163278.822493] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163278.822499] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163278.822502] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163278.822503] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163278.827503] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.000E/input/input37
+[32m[163278.827684] [0m[33mhid-generic 0003:046D:C077.000E[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163315.615976] [0m[33musb 1-3.2[0m: USB disconnect, device number 14
+[32m[163318.654370] [0m[33musb 1-3.2[0m: new low-speed USB device number 15 using xhci_hcd
+[32m[163318.758681] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163318.758683] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163318.758684] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163318.758685] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163318.763611] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.000F/input/input38
+[32m[163318.763726] [0m[33mhid-generic 0003:046D:C077.000F[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163322.016320] [0m[33musb 1-3.2[0m: USB disconnect, device number 15
+[32m[163323.518835] [0m[33musb 1-3.2[0m: new low-speed USB device number 16 using xhci_hcd
+[32m[163323.623967] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163323.623969] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163323.623971] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163323.623972] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163323.628927] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0010/input/input39
+[32m[163323.629288] [0m[33mhid-generic 0003:046D:C077.0010[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163325.088072] [0m[33musb 1-3.2[0m: USB disconnect, device number 16
+[32m[163326.334833] [0m[33musb 1-3.2[0m: new low-speed USB device number 17 using xhci_hcd
+[32m[163326.443935] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163326.443937] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163326.443939] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163326.443940] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163326.450306] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0011/input/input40
+[32m[163326.450587] [0m[33mhid-generic 0003:046D:C077.0011[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163333.791786] [0m[33musb 1-3.2[0m: USB disconnect, device number 17
+[32m[163336.318476] [0m[33musb 1-3.2[0m: new low-speed USB device number 18 using xhci_hcd
+[32m[163336.422898] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163336.422900] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163336.422901] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163336.422902] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163336.427439] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0012/input/input41
+[32m[163336.427681] [0m[33mhid-generic 0003:046D:C077.0012[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163340.959901] [0m[33musb 1-3.2[0m: USB disconnect, device number 18
+[32m[163342.974491] [0m[33musb 1-3.2[0m: new low-speed USB device number 19 using xhci_hcd
+[32m[163343.078877] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163343.078878] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163343.078880] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163343.078880] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163343.083458] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0013/input/input42
+[32m[163343.083576] [0m[33mhid-generic 0003:046D:C077.0013[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163347.616282] [0m[33musb 1-3.2[0m: USB disconnect, device number 19
+[32m[163350.146977] [0m[33musb 1-3.2[0m: new low-speed USB device number 20 using xhci_hcd
+[32m[163350.255314] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163350.255316] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163350.255317] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163350.255318] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163350.260354] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0014/input/input43
+[32m[163350.260480] [0m[33mhid-generic 0003:046D:C077.0014[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163351.968100] [0m[33musb 1-3.2[0m: USB disconnect, device number 20
+[32m[163353.470634] [0m[33musb 1-3.2[0m: new low-speed USB device number 21 using xhci_hcd
+[32m[163353.579909] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163353.579911] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163353.579913] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163353.579914] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163353.584827] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0015/input/input44
+[32m[163353.585065] [0m[33mhid-generic 0003:046D:C077.0015[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163400.352382] [0m[33musb 1-3.2[0m: USB disconnect, device number 21
+[32m[163402.110865] [0m[33musb 1-3.2[0m: new low-speed USB device number 22 using xhci_hcd
+[32m[163402.220287] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163402.220290] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163402.220291] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163402.220293] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163402.225229] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0016/input/input45
+[32m[163402.225387] [0m[33mhid-generic 0003:046D:C077.0016[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163403.680176] [0m[33musb 1-3.2[0m: USB disconnect, device number 22
+[32m[163405.183252] [0m[33musb 1-3.2[0m: new low-speed USB device number 23 using xhci_hcd
+[32m[163405.289137] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163405.289148] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163405.289151] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163405.289152] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163405.293863] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0017/input/input46
+[32m[163405.294242] [0m[33mhid-generic 0003:046D:C077.0017[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163657.120730] [0m[33musb 1-3.2[0m: USB disconnect, device number 23
+[32m[163658.624589] [0m[33musb 1-3.2[0m: new low-speed USB device number 24 using xhci_hcd
+[32m[163658.733696] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163658.733698] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163658.733700] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163658.733701] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163658.738592] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0018/input/input47
+[32m[163658.738760] [0m[33mhid-generic 0003:046D:C077.0018[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163722.143974] [0m[33musb 1-3.2[0m: USB disconnect, device number 24
+[32m[163724.672597] [0m[33musb 1-3.2[0m: new low-speed USB device number 25 using xhci_hcd
+[32m[163724.777908] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163724.777914] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163724.777918] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163724.777921] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163724.783528] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0019/input/input48
+[32m[163724.783964] [0m[33mhid-generic 0003:046D:C077.0019[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163754.400663] [0m[33musb 1-3.2[0m: USB disconnect, device number 25
+[32m[163755.685013] [0m[33musb 1-3.2[0m: new low-speed USB device number 26 using xhci_hcd
+[32m[163755.789128] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163755.789133] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163755.789137] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163755.789140] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163755.794915] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.001A/input/input49
+[32m[163755.795751] [0m[33mhid-generic 0003:046D:C077.001A[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163757.728511] [0m[33musb 1-3.2[0m: USB disconnect, device number 26
+[32m[163758.977143] [0m[33musb 1-3.2[0m: new low-speed USB device number 27 using xhci_hcd
+[32m[163759.081268] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163759.081271] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163759.081273] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163759.081274] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163759.086322] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.001B/input/input50
+[32m[163759.086653] [0m[33mhid-generic 0003:046D:C077.001B[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163761.568817] [0m[33musb 1-3.2[0m: USB disconnect, device number 27
+[32m[163762.817167] [0m[33musb 1-3.2[0m: new low-speed USB device number 28 using xhci_hcd
+[32m[163762.925359] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163762.925361] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163762.925363] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163762.925363] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163762.930782] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.001C/input/input51
+[32m[163762.930984] [0m[33mhid-generic 0003:046D:C077.001C[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163791.264202] [0m[33musb 1-3.2[0m: USB disconnect, device number 28
+[32m[163794.045315] [0m[33musb 1-3.2[0m: new low-speed USB device number 29 using xhci_hcd
+[32m[163794.149967] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163794.149970] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163794.149972] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163794.149974] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163794.155045] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.001D/input/input52
+[32m[163794.155291] [0m[33mhid-generic 0003:046D:C077.001D[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163796.384290] [0m[33musb 1-3.2[0m: USB disconnect, device number 29
+[32m[163799.169336] [0m[33musb 1-3.2[0m: new low-speed USB device number 30 using xhci_hcd
+[32m[163799.278119] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163799.278123] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163799.278125] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163799.278128] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163799.283495] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.001E/input/input53
+[32m[163799.284111] [0m[33mhid-generic 0003:046D:C077.001E[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163947.168672] [0m[33musb 1-3.2[0m: USB disconnect, device number 30
+[32m[163948.933742] [0m[33musb 1-3.2[0m: new low-speed USB device number 31 using xhci_hcd
+[32m[163949.043273] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163949.043278] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163949.043282] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163949.043286] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163949.048892] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.001F/input/input54
+[32m[163949.049462] [0m[33mhid-generic 0003:046D:C077.001F[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163974.560859] [0m[33musb 1-3.2[0m: USB disconnect, device number 31
+[32m[163977.342338] [0m[33musb 1-3.2[0m: new low-speed USB device number 32 using xhci_hcd
+[32m[163977.447483] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163977.447486] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163977.447487] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163977.447489] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163977.458343] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0020/input/input55
+[32m[163977.458780] [0m[33mhid-generic 0003:046D:C077.0020[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[163998.112846] [0m[33musb 1-3.2[0m: USB disconnect, device number 32
+[32m[163999.358447] [0m[33musb 1-3.2[0m: new low-speed USB device number 33 using xhci_hcd
+[32m[163999.467244] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[163999.467247] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[163999.467248] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[163999.467250] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[163999.472257] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0021/input/input56
+[32m[163999.472635] [0m[33mhid-generic 0003:046D:C077.0021[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[164042.400856] [0m[33musb 1-3.2[0m: USB disconnect, device number 33
+[32m[164044.166191] [0m[33musb 1-3.2[0m: new low-speed USB device number 34 using xhci_hcd
+[32m[164044.274509] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[164044.274510] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[164044.274511] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[164044.274512] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[164044.279221] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0022/input/input57
+[32m[164044.279363] [0m[33mhid-generic 0003:046D:C077.0022[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[164110.496871] [0m[33musb 1-3.2[0m: USB disconnect, device number 34
+[32m[164112.003065] [0m[33musb 1-3.2[0m: new low-speed USB device number 35 using xhci_hcd
+[32m[164112.107265] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[164112.107268] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[164112.107269] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[164112.107271] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[164112.112266] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0023/input/input58
+[32m[164112.112456] [0m[33mhid-generic 0003:046D:C077.0023[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[164114.336990] [0m[33musb 1-3.2[0m: USB disconnect, device number 35
+[32m[164115.618698] [0m[33musb 1-3.2[0m: new low-speed USB device number 36 using xhci_hcd
+[32m[164115.726808] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[164115.726810] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[164115.726812] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[164115.726813] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[164115.732026] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0024/input/input59
+[32m[164115.732185] [0m[33mhid-generic 0003:046D:C077.0024[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[164222.368751] [0m[33musb 1-3.2[0m: USB disconnect, device number 36
+[32m[164224.127680] [0m[33musb 1-3.2[0m: new low-speed USB device number 37 using xhci_hcd
+[32m[164224.233128] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[164224.233132] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[164224.233134] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[164224.233136] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[164224.238457] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0025/input/input60
+[32m[164224.238887] [0m[33mhid-generic 0003:046D:C077.0025[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[165685.979975] [0m[33mr8169 0000:01:00.0 enp1s0[0m: Link is Down
+[32m[165699.390263] [0m[33mr8169 0000:01:00.0 enp1s0[0m: Link is Up - 100Mbps/Full - flow control rx/tx
+[32m[167038.114311] [0m[33musb 1-3.2[0m: USB disconnect, device number 37
+[32m[167040.136395] [0m[33musb 1-3.2[0m: new low-speed USB device number 38 using xhci_hcd
+[32m[167040.240603] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[167040.240610] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[167040.240613] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[167040.240616] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[167040.246776] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0026/input/input61
+[32m[167040.247438] [0m[33mhid-generic 0003:046D:C077.0026[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[167467.650607] [0m[33musb 1-3.1[0m: new full-speed USB device number 39 using xhci_hcd
+[32m[167467.764968] [0m[33musb 1-3.1[0m: New USB device found, idVendor=046d, idProduct=0a62, bcdDevice= 1.00
+[32m[167467.764979] [0m[33musb 1-3.1[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[167467.764984] [0m[33musb 1-3.1[0m: Product: UE BOOM
+[32m[167467.764988] [0m[33musb 1-3.1[0m: Manufacturer: Logitech
+[32m[167467.771733] [0m[33mhid-generic 0003:046D:0A62.0027[0m: hiddev1,hidraw4: USB HID v1.11 Device [Logitech UE BOOM] on usb-0000:00:14.0-3.1/input0
+[32m[167996.834127] [0m[33musb 1-3.2[0m: USB disconnect, device number 38
+[32m[167998.593737] [0m[33musb 1-3.2[0m: new low-speed USB device number 40 using xhci_hcd
+[32m[167998.703272] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[167998.703275] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[167998.703278] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[167998.703279] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[167998.708703] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0028/input/input62
+[32m[167998.709089] [0m[33mhid-generic 0003:046D:C077.0028[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[168000.162582] [0m[33musb 1-3.2[0m: USB disconnect, device number 40
+[32m[168002.946122] [0m[33musb 1-3.2[0m: new low-speed USB device number 41 using xhci_hcd
+[32m[168003.054620] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[168003.054626] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[168003.054630] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[168003.054633] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[168003.060576] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.0029/input/input63
+[32m[168003.061118] [0m[33mhid-generic 0003:046D:C077.0029[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[168004.514528] [0m[33musb 1-3.2[0m: USB disconnect, device number 41
+[32m[168006.273724] [0m[33musb 1-3.2[0m: new low-speed USB device number 42 using xhci_hcd
+[32m[168006.383133] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[168006.383136] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[168006.383138] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[168006.383139] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[168006.388147] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.002A/input/input64
+[32m[168006.388531] [0m[33mhid-generic 0003:046D:C077.002A[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[168309.666276] [0m[33musb 1-3.2[0m: USB disconnect, device number 42
+[32m[168311.679406] [0m[33musb 1-3.2[0m: new low-speed USB device number 43 using xhci_hcd
+[32m[168311.783355] [0m[33musb 1-3.2[0m: New USB device found, idVendor=046d, idProduct=c077, bcdDevice=72.00
+[32m[168311.783358] [0m[33musb 1-3.2[0m: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+[32m[168311.783360] [0m[33musb 1-3.2[0m: Product: USB Optical Mouse
+[32m[168311.783361] [0m[33musb 1-3.2[0m: Manufacturer: Logitech
+[32m[168311.788295] [0m[33minput[0m: Logitech USB Optical Mouse as /devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3.2/1-3.2:1.0/0003:046D:C077.002B/input/input65
+[32m[168311.788556] [0m[33mhid-generic 0003:046D:C077.002B[0m: input,hidraw1: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-0000:00:14.0-3.2/input0
+[32m[177605.543536] [0m[33musb 1-3.1[0m: USB disconnect, device number 39
+[32m[225146.040671] [0m[33mr8169 0000:01:00.0 enp1s0[0m: Link is Down
+[32m[225167.277439] [0m[33mr8169 0000:01:00.0 enp1s0[0m: Link is Up - 1Gbps/Full - flow control rx/tx

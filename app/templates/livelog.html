@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Livelog: {{ filename }}</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        .container {
+            background: white;
+
+            /* give the outermost container a predefined size */
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container2 {
+            margin: 10px;
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+
+            /* for Firefox */
+            min-height: 0;
+        }
+
+        .header {
+            margin: 6px;
+            display: flex;
+            flex-direction: rows;
+        }
+
+        .filename {
+            flex-grow: 1;
+        }
+
+        .scrollable {
+            background: white;
+            flex-grow: 1;
+
+            overflow: auto;
+
+            /* for Firefox */
+            min-height: 0;
+
+            border: 1px solid #9A9A9A;
+            margin: 0px;
+            padding: 6px
+        }
+
+        pre {
+            margin: 0px;
+            padding: 0px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container2">
+            <div class="header">
+                <div class="filename">
+                    {% if filename %}
+                    <code>{{ filename }}</code>
+                    {% else %}
+                    <code style="color: red">Please select a file ...</code>
+                    {% endif %}
+                </div>
+                <div class="form">
+                    {% if form is defined %}
+                    <form method="POST" action='{{ url_for("livelog") }}'>
+                        {{ form.csrf_token }}
+                        <div class="form-field">{{ form.files }} {{ form.submit }} {{ form.reload }}</div>
+                    </form>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="scrollable" id="logoutput"></div>
+        </div>
+    </div>
+
+    <script>
+        const logoutput = document.getElementById('logoutput');
+        const follow = document.getElementById('follow');
+
+        const evtSource = new EventSource('{{ url_for("livestream", filename=filename) }}');
+        evtSource.onmessage = function (event) {
+            // set "autoscroll=true" if we are at the scroll top
+            const AUTOSCROLL_X_MARGIN = 60
+            autoscroll = logoutput.clientHeight + logoutput.scrollTop + AUTOSCROLL_X_MARGIN > logoutput.scrollHeight
+
+            logoutput.insertAdjacentHTML("beforeend", event.data);
+
+            if (autoscroll) {
+                // logoutput.scrollTo({ top: logoutput.scrollHeight })
+                logoutput.scrollTo({ top: logoutput.scrollHeight, behavior: 'smooth' })
+                // If many lines arrive quick (for example 1600lines in 2s), the 'smooth' option creates additinal load
+                // so that autoscroll will not work correctly anymore.
+                // Also during how load in chrome, the message
+                //   "[Violation] Forced reflow while executing JavaScript took 1929ms"
+                // has been observed.
+            }
+        };
+        evtSource.onerror = function (err) {
+            evtSource.close()
+        };
+    </script>
+</body>
+
+</html>

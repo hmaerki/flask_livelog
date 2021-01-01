@@ -1,0 +1,16 @@
+This is a logfile with
+sample contests.
+Special characters will be html-escaped: < Ä > <br> &
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
+Every line containing ERROR will be highlited.
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+The same for WARNING...
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.
+... and INFO
+Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit.
