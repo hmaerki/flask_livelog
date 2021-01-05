@@ -22,7 +22,8 @@ try:
             The class avoids the garbage collector to remove 'self.win_handle' and 'self.os_handle'.
             '''
             def __init__(self, filename):
-                self.win_handle = win32file.CreateFile(str(filename),
+                self.win_handle = win32file.CreateFile(
+                    str(filename),
                     win32file.GENERIC_READ,
                     win32file.FILE_SHARE_DELETE | win32file.FILE_SHARE_READ | win32file.FILE_SHARE_WRITE,
                     None,
@@ -35,14 +36,14 @@ try:
 
             def read(self):
                 return self.file_handle.read()
-            
+
             def close(self):
                 self.file_handle.close()
 
             def __enter__(self):
                 return self
 
-            def __exit__(self, type, value, tb):
+            def __exit__(self, _type, _value, _tb):
                 self.close()
 
         return WindowsFile(filename)
@@ -73,8 +74,8 @@ if ANSI2COLOR_PRESENT:
             parts = self._collapse_cursor(parts)
             return "".join(parts).replace('\n', '<br>')
 
-class LineCodeRenderer:
-    def render(self, text):
+class LineCodeRenderer:  # pylint: disable=too-few-public-methods
+    def render(self, text):  # pylint: disable=no-self-use
         # Surround with 'pre'
         text = f'<pre>{html.escape(text)}</pre>'
         # If there are newlines, replace with 'pre'
@@ -86,22 +87,21 @@ class LineCodeRenderer:
 @dataclass
 class WordHighlight:
     word: str
-    foreground: str
-    background: str
+    color: str
 
 @dataclass
 class LogfileRenderer:
-    WORDRENDERER = (
-        WordHighlight('ERROR', 'red', 'bisque'),
-        WordHighlight('WARNING', 'orangered', 'khaki'),
-        WordHighlight('INFO', 'blue', 'lightblue')
+    wordrenderer = (
+        WordHighlight('ERROR', 'red'),
+        WordHighlight('WARNING', '#ff7700'), # Orange
+        WordHighlight('INFO', 'blue')
     )
     buffer: str = ''
 
-    def __span(self, line, word, color, background): # pylint: disable=no-self-use
-        span = f'<span style="color: {color}; font-weight: bold">{word}</span>'
+    def __span(self, line, word, color): # pylint: disable=no-self-use
+        span = f'<span style="font-weight: bold">{word}</span>'
         line = line.replace(word, span)
-        return f'<span style="display:block; background-color: {background}">{line}</span>'
+        return f'<span style="color: {color}">{line}</span>'
 
     def render(self, text):
         text = self.buffer + html.escape(text)
@@ -113,14 +113,14 @@ class LogfileRenderer:
             # If the line does not end with endline: Keep it for the next call
             lines = lines[:-1]
         for line in lines:
-            for wordrenderer in self.WORDRENDERER:
+            for wordrenderer in self.wordrenderer:
                 if line.find(wordrenderer.word) >= 0:
                     line = self.__span(
                         line=line,
                         word=wordrenderer.word,
-                        color=wordrenderer.foreground,
-                        background=wordrenderer.background
+                        color=wordrenderer.color
                     )
+                    break
             html_ += line + '<br>'
 
         return html_
@@ -225,7 +225,7 @@ def generator_pipe(args, renderer):
                     buffer = io.StringIO()
 
 
-def generator_pipe_simple(args, renderer):
+def generator_pipe_simple(args, renderer):  # pylint: disable=unused-argument
     assert isinstance(args, list)
     # See: https://www.endpoint.com/blog/2015/01/28/getting-realtime-output-using-python
     process = subprocess.Popen(args, stdout=subprocess.PIPE, encoding='utf-8')
@@ -244,6 +244,7 @@ class LogfileProvider:
     '''
     May be derived.
     '''
+    # pylint: disable=invalid-name
     NO_FILE_SELECTED = ''
     LIVELOG_MOCK = 'LIVELOG_MOCK'
     COMMAND_DMESG = 'COMMAND_DMESG'
