@@ -252,9 +252,12 @@ class LogfileProvider:
     base_directory: pathlib.Path
     pattern: str
 
+    def select_file(self, filename):
+        return filename.suffix in ('.ansi', '.txt')
+
     def get_filelist(self):
         for filename in self.base_directory.glob(self.pattern):
-            if filename.suffix in ('.ansi', '.txt'):
+            if self.select_file(filename):
                 yield str(filename.relative_to(self.base_directory))
         yield LogfileProvider.LIVELOG_MOCK
         yield LogfileProvider.COMMAND_DMESG
