@@ -32,10 +32,24 @@ try:
                     None
                 )
                 self.os_handle = msvcrt.open_osfhandle(self.win_handle.handle, os.O_RDONLY)
-                self.file_handle = os.fdopen(self.os_handle, mode='r', encoding='utf-8')
+                file_handle = os.fdopen(self.os_handle, mode='rb')
+                self.file_handle = self.read_bom(file_handle)
+
+            def read_bom(self, file_handle):
+                for _i in range(10):
+                    # https://en.wikipedia.org/wiki/Byte_order_mark
+                    bom = file_handle.read(2)
+                    if bom == b'\xff\xfe':
+                        return io.TextIOWrapper(file_handle, encoding="utf-16-le")
+                    time.sleep(0.05)
+
+                # cmd.exe does not use a bom. We assume "utf-8"
+                file_handle.seek(0)
+                return io.TextIOWrapper(file_handle, encoding="utf-8")
 
             def read(self):
-                return self.file_handle.read()
+                text = self.file_handle.read()
+                return text
 
             def close(self):
                 self.file_handle.close()
