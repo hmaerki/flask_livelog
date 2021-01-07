@@ -23,7 +23,7 @@ try:
             '''
             def __init__(self, filename):
                 self.win_handle = win32file.CreateFile(
-                    str(filename),
+                    str(filename.absolute()),
                     win32file.GENERIC_READ,
                     win32file.FILE_SHARE_DELETE | win32file.FILE_SHARE_READ | win32file.FILE_SHARE_WRITE,
                     None,
@@ -31,7 +31,7 @@ try:
                     win32file.FILE_ATTRIBUTE_NORMAL,
                     None
                 )
-                self.os_handle = msvcrt.open_osfhandle(self.win_handle, os.O_RDONLY)
+                self.os_handle = msvcrt.open_osfhandle(self.win_handle.handle, os.O_RDONLY)
                 self.file_handle = os.fdopen(self.os_handle, mode='r', encoding='utf-8')
 
             def read(self):
