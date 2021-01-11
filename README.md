@@ -1,5 +1,9 @@
 # Flask Logfile Live Logging
 
+## Issues on Windows
+
+* The Browser when running on the local machine updates late or not. On remote machine it is instantanious!
+
 ## Features
 Display and live update of logfiles.
 
