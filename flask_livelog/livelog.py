@@ -238,7 +238,7 @@ def generator_pipe(args, renderer):
                 return
 
     _queue = queue.Queue()
-    thread = threading.Thread(target=popen_thread)
+    thread = threading.Thread(target=popen_thread, name="Livelog")
     thread.start()
 
     yield htmlnotice(" ".join(args))
@@ -369,6 +369,7 @@ class LiveLog:  # pylint: disable=too-few-public-methods
             filename = request.args.get("filename")
 
             def generate():
+                threading.current_thread().name = f"Livelog: {filename}"
                 for msg in provider.generator(filename):
                     yield f"data: {msg}\n\n"
                 yield f"data: {MAGIC_EOF}\n\n"
