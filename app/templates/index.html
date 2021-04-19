@@ -17,8 +17,10 @@
         <li><a target="livelog" href='{{ url_for("livelog", filename="LIVELOG_MOCK") }}'>LIVELOG_MOCK</a> Just a counter to see livelog and page scrolling</li>
         <li><a target="livelog" href='{{ url_for("livelog", filename="COMMAND_DMESG") }}'>COMMAND_DMESG</a> Linux only: Pipe output of `dmesg --follow`.</li>
         <li><a target="livelog" href='{{ url_for("livelog", filename="COMMAND_PS") }}'>COMMAND_PS</a> Linux only: Pipe output of `ps a`.</li>
-        <li><a target="livelog" href='{{ url_for("livelog", filename=filename_pytest, view="1") }}'>{{ filename_pytest }}</a> You may start <code>run_Pytests.sh</code> to see the live update.</code></li>
-        <li><a target="livelog" href='{{ url_for("livelog", filename=filename_test, view="1") }}'>{{ filename_test }}</a> A Logfile with highlighting of ERROR, WARNING and INFO</li>
+
+        {% for filename, comment in filenames %}
+          <li><a target="livelog" href='{{ url_for("livelog", filename=filename, view="1") }}'>{{ filename.name }}</a> {{ comment }}</li>
+        {% endfor %}
     </ul>
 </body>
 

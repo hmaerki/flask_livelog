@@ -9,6 +9,14 @@ import threading
 import subprocess
 from dataclasses import dataclass
 
+from flask_wtf import FlaskForm
+from wtforms import SubmitField, SelectField
+from flask import render_template, Response, request
+
+
+# Sending this contants will mark a EOF
+MAGIC_EOF = "MAGIC_EOF_MAGIC"
+
 try:
     import msvcrt
     import win32file
@@ -83,11 +91,6 @@ try:
 except ImportError:
     ANSI2COLOR_PRESENT = False
 
-from flask_wtf import FlaskForm
-from wtforms import SubmitField, SelectField
-from flask import render_template, Response, request
-
-
 if ANSI2COLOR_PRESENT:
 
     class Ansi2HtmlRenderer(ansi2html.Ansi2HTMLConverter):
@@ -125,6 +128,11 @@ class LogfileRenderer:
         WordHighlight("ERROR", "red"),
         WordHighlight("WARNING", "#ff7700"),  # Orange
         WordHighlight("INFO", "blue"),
+        WordHighlight("DEBUG", "lightgray"),
+        WordHighlight("[ERRO]", "red"),
+        WordHighlight("[WARN]", "#ff7700"),  # Orange
+        WordHighlight("[INFO]", "blue"),
+        WordHighlight("[DEBU]", "lightgray"),
     )
     buffer: str = ""
 
@@ -241,7 +249,6 @@ def generator_pipe(args, renderer):
                 data = _queue.get(timeout=0.1)
                 if data is None:
                     yield buffer.getvalue()
-                    yield htmlnotice("exit")
                     return
                 buffer.write(data)
             except queue.Empty:
@@ -301,7 +308,6 @@ class LogfileProvider:
                 time.sleep(0.2)
                 color = ("black", "black", "black", "blue", "red")[i % 5]
                 yield f'<span style="color: {color}">{i}</span><br>'
-            yield htmlnotice("EOF")
             return
 
         if filename == LogfileProvider.COMMAND_DMESG:
@@ -365,5 +371,6 @@ class LiveLog:  # pylint: disable=too-few-public-methods
             def generate():
                 for msg in provider.generator(filename):
                     yield f"data: {msg}\n\n"
+                yield f"data: {MAGIC_EOF}\n\n"
 
             return Response(generate(), mimetype="text/event-stream")

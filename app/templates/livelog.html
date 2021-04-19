@@ -94,10 +94,9 @@
         const logoutput = document.getElementById('logoutput');
         const follow = document.getElementById('follow');
 
-        const evtSource = new EventSource('{{ url_for("livestream", filename=filename) }}');
-        evtSource.onmessage = function (event) {
-            add_html(event.data)
-        };
+        const add_highlight_html = function(text) {
+            add_html(`<span style='display:block; background-color: khaki; text-align: center'>${text}</span>`);
+        }
         const add_html = function(text) {
             // set "autoscroll=true" if we are at the scroll top
             const AUTOSCROLL_X_MARGIN = 60
@@ -115,11 +114,21 @@
                 // has been observed.
             }
         }
-         evtSource.onerror = function (err) {
+
+        const evtSource = new EventSource('{{ url_for("livestream", filename=filename) }}');
+        evtSource.onmessage = function (event) {
+            if (event.data == "MAGIC_EOF_MAGIC") {
+                add_highlight_html("EOF");
+                evtSource.close()
+                return
+            }
+            add_html(event.data)
+        };
+        evtSource.onerror = function (err) {
             console.log(`EventSource readyState: ${this.readyState}). Error: ${err}`);
             if (this.readyState == EventSource.CONNECTING) {
                 console.log("Reconnecting...");
-                add_html("<span style='display:block; background-color: khaki; text-align: center'>reconnect...</span>");
+                add_highlight_html("reconnect...");
             }
         };
     </script>

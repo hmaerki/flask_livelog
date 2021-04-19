@@ -1,7 +1,7 @@
 import pathlib
 
 import jinja2
-from flask import Flask, render_template
+from flask import Flask, Markup, render_template
 
 from flask_livelog import livelog
 
@@ -14,17 +14,28 @@ app.jinja_env.undefined = jinja2.StrictUndefined
 app.secret_key = b'_6#y2L"F4Q8z\n\xec]/'
 app.config["SEND_FILE_MAX_AGE_DEFAULT"] = 0
 
-provider = livelog.LogfileProvider(
-    DIRECTORY_OF_THIS_FILE.parent, "**/*.ansi"
-)  # pylint: disable=invalid-name
+PROVIDER = livelog.LogfileProvider(DIRECTORY_OF_THIS_FILE.parent, "**/*.ansi")
 
-livelog.LiveLog(app, provider)
+livelog.LiveLog(app, PROVIDER)
+
+FILENAMES = (
+    (
+        DIRECTORY_EXAMPLES / "log_pytest.ansi",
+        Markup(
+            "You may start <code>run_Pytests.sh</code> to see the live update.</code>"
+        ),
+    ),
+    (
+        DIRECTORY_EXAMPLES / "log_text.txt",
+        "A Logfile with highlighting of ERROR, WARNING and INFO",
+    ),
+    (
+        DIRECTORY_EXAMPLES / "logging_sample.log",
+        "A logfile produced from a python-logger [ERRO], [WARN], etc.",
+    ),
+)
 
 
 @app.route("/")
 def index():
-    filename_pytest = str(DIRECTORY_EXAMPLES / "log_pytest.ansi")
-    filename_test = str(DIRECTORY_EXAMPLES / "log_text.txt")
-    return render_template(
-        "index.html", filename_pytest=filename_pytest, filename_test=filename_test
-    )
+    return render_template("index.html", filenames=FILENAMES)
