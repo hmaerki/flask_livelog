@@ -3,7 +3,7 @@ import pathlib
 import jinja2
 from flask import Flask, render_template
 
-import livelog
+from flask_livelog import livelog
 
 DIRECTORY_OF_THIS_FILE = pathlib.Path(__file__).parent
 DIRECTORY_EXAMPLES = DIRECTORY_OF_THIS_FILE.parent / 'examples_pytest'

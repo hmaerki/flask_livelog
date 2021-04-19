@@ -61,6 +61,7 @@ Start Flask:
 ```bash
 export FLASK_APP=app/webapp.py
 export FLASK_ENV=development
+export PYTHONPATH=`pwd`
 flask run
 ```
 Start Flask and open `http://localhost:5000/`:
@@ -126,3 +127,8 @@ stdbuf -oL pytest --color=yes | stdbuf -oL aha --no-header > log_pytest.html
 
 stdbuf -oL pytest --color=yes | stdbuf -oL ansi2html --partial --inline > log_pytest.html
 ```
+
+aha -f log_pytest.ansi >log_pytest_aha.html
+
+sudo apt install colorized-logs
+ansi2txt
